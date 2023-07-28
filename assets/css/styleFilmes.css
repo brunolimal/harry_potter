@@ -114,3 +114,18 @@ body {
     .menu__superior li a:active {
     text-decoration: underline;
     }
+
+    .navBarFooter__copyright {
+        background: black;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      
+      .navBarFooter__copyright p {
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 19px;
+        text-align: center;
+        font-family: DM Sans;
+      }
