@@ -1,0 +1,334 @@
+.header {
+  display: flex;
+}
+
+/* Sessão do MENU */
+.header__logo {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 233px;
+  height: 65px;
+  background-color: black;
+}
+/* Sessão do MENU com Bootstrap */
+.navbar-nav {
+  list-style: none;
+  padding: 30px;
+  color: white;
+  display: flex;
+  gap: 40px;
+  margin-left: 50px;
+}
+
+/* Sessão MENU antigo
+.menu__item {
+  list-style: none;
+  padding: 30px;
+  color: white;
+  display: flex;
+  gap: 40px;
+  margin-left: 50px;
+}
+*/
+
+.navbar-nav li:nth-child(5) {
+  border-bottom: 2px white solid;
+}
+
+/* ANTIGO
+.menu__item li:nth-child(5) {
+  border-bottom: 2px white solid;
+}
+*/
+
+.navbar navbar-expand-lg bg-body-tertiary{
+  background-color: black;
+}
+
+.container-fluid{
+  background-color: black;
+}
+
+.nav-item .nav-link {
+  text-decoration: none;
+  color: white;
+  font-family: DM sans;
+}
+
+.nav-item .nav-link:hover {
+  color: #917a50;
+}
+
+h5 a {
+  color: #917a50;
+}
+
+.footer__nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__nav li a:hover {
+  color: #917a50;
+}
+
+
+.principal {
+  background-color: black;
+
+}
+
+/* Sessão da imagem inicia de CAPA */
+.imgCapa {
+  width: 100%;
+  height: 550px;
+}
+
+.textoInicial {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.textoInicial__title {
+  width: 1440px;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  font-family: Wizard World;
+}
+.textoInicial__subtitle {
+  width: 1440px;
+  color: white;
+  font-family: Wizard World;
+  font-weight: 100;
+  font-size: 22px;
+  justify-content: center;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.textoInicial__title::before {
+  content: "« ";
+  color: #917a50;
+}
+
+.textoInicial__title::after {
+  content: " »";
+  color: #917a50;
+}
+
+.textoInicial__title {
+  animation-duration: 4s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Sessão do restaurante- versao 1 
+@media screen and (min-width: 768px) {
+  body {
+      background-color: blue;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  body {
+          background-color: red;
+    }
+}
+
+
+@media only screen and (min-width: 780px) and (max-width: 1279px) {
+  body {
+          background-color: #000000;
+    }
+}
+*/
+
+
+.blocoRestaurantes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+/* Sessão do restaurante- versao 1 */
+a {
+  color: #917a50;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+h3 {
+  display: flex;
+  margin: 0px;
+  padding-top: 20px;
+}
+.restaurante {
+  height: 270px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.restaurante__img {
+  width: 340px;
+  height: 218.8px;
+  left: 8px;
+  top: 26px;
+  position: relative;
+}
+
+.restaurante__title {
+  left: 365px;
+  top: 0px;
+  position: absolute;
+  color: white;
+  font-size: 32px;
+  font-family: Wizard World;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.restaurante__subtitle {
+  left: 365px;
+  top: 77px;
+  position: absolute;
+  color: #917a50;
+  font-size: 23px;
+  font-family: Wizard World;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.restaurante__descritivo {
+  color: white;
+  font-family: DM sans;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 19px;
+  line-height: 20.5px;
+}
+
+
+/* Sessão do restaurante- versao 2 */
+.restaurante2 {
+  width: auto;
+  height: 300px;
+  position: relative;
+  background: rgb(36, 35, 35);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.restaurante2__img {
+  width: 300px;
+  height: 255.8px;
+  right: 22px;
+  top: 21px;
+  position: absolute;
+}
+
+.restaurante2__title {
+  height: 70px;
+  top: 0px;
+  margin: 0px;
+  color: white;
+  font-size: 32px;
+  font-family: Wizard World;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.restaurante2__subtitle {
+  width: 950px;
+  height: 184px;
+  top: 68px;
+  color: #917a50;
+  font-size: 23px;
+  font-family: Wizard World;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.restaurante2__descritivo{
+    width: 950px;
+    color: white; 
+    font-family: DM sans;
+    font-weight: 400; 
+    line-height: 30px; 
+    font-size: 19px;
+    line-height: 20.50px; 
+}
+
+/* -- Rodapé -- */
+
+.footer {
+  width: auto;
+  position: relative;
+  display: block;
+}
+
+.footer__logo {
+  width: 150px;
+  height: 49px;
+  left: 96px;
+  top: 40px;
+  position: relative;
+
+}
+
+.footer__nav{
+  font-size: 15px;
+  font-family: DM Sans;
+  font-weight: 500;
+  line-height: 22.5px;
+  padding-top: 36px;
+  padding-bottom: 8px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  list-style: none;
+  display: flex;
+}
+
+.copyright {
+  background: black;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer .copyright p {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: center;
+  font-family: DM Sans;
+}
+
+.footer__linha {
+  height: 2px;
+  justify-items: center;
+  background: white;
+  opacity: unset;
+  margin: 1px 5%;
+}
