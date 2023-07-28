@@ -4,20 +4,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/styleHome.css">
+  <link rel="stylesheet" href="./assets/css/styleHome.css">
+  <link rel="stylesheet" href="./assets/css/responsividadeHome.css">
+
   <link href="https://fonts.cdnfonts.com/css/wizard-world" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="https://www.nicepng.com/png/detail/439-4398678_harry-potter-logo-png-download-harry-potter-logo.png">
   
   <title>Harry Potter - Projeto Final</title>
 </head>
 
-<header>    
-    <!-- Menu Header -->
+<header> 
+    
+    <!-- Menu Header com Bootstrap -->
+    <nav class="nav-bar">
+      <div>
+          <img class="nav-logo" src="https://logodownload.org/wp-content/uploads/2017/07/harry-potter-logo-2.png" alt="Logo Harry Potter">
+      </div>
+      <div class="nav-list">
+          <ul>
+              <li class="nav-item"><a href="index.html" >Home</a></li>
+              <li class="nav-item"><a href="personagens.html" >Personagens</a></li>
+              <li class="nav-item"><a href="filmes.html" > Filmes</a></li>
+              <li class="nav-item"><a href="livros.html" > Livros</a></li>
+              <li class="nav-item"><a href="restaurante.html" > Restaurantes</a></li>
+              <li class="nav-item"><a href="hospedagens.html" > Hospedagens</a></li>
+              <li class="nav-item"><a href="loja.html" > Loja</a></li>
+              <li class="nav-item"><a href="comunidade.html" > Comunidade</a></li>
+          </ul>
+      </div>
+
+      <div class="mobile-menu-icon">
+          <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+      </div>
+  </nav>
+  <div class="mobile-menu">
+      <ul>
+          <li class="nav-item"><a href="#" >Home</a></li>
+          <li class="nav-item"><a href="#" >Personagens</a></li>
+          <li class="nav-item"><a href="#" > Filmes</a></li>
+          <li class="nav-item"><a href="#" > Livros</a></li>
+          <li class="nav-item"><a href="#" > Filmes</a></li>
+          <li class="nav-item"><a href="#" > Restaurantes</a></li>
+          <li class="nav-item"><a href="#" > Hospedagens</a></li>
+          <li class="nav-item"><a href="#" > Filmes</a></li>
+          <li class="nav-item"><a href="#" > Comunidade</a></li>
+      </ul>
+  </div>
+    
+    <!-- Menu Header antigo
     <div class="header">
-      <img class="logoHeader" src="https://logodownload.org/wp-content/uploads/2017/07/harry-potter-logo-2.png" />
+      <img class="header__logo" src="https://logodownload.org/wp-content/uploads/2017/07/harry-potter-logo-2.png" />
     <nav>
         <ul>
-        <div class="nav-list">
+        <div class="header__nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="personagens.html">Personagens</a></li>
             <li><a href="filmes.html">Filmes</a></li>
@@ -30,128 +69,137 @@
         </ul>
     </nav>
   </div>
+  -->
 </header>
 
 <body class="body">
         <!-- seja bem vindo -->
-        <div>
-            <img class="bannerPrincipal" src="https://i.ibb.co/qdtyzVY/banner-Principal.png"/>
-            <img class="arabescoEsquerdo" src="https://cdn-hogwartslegacy.warnerbrosgames.com/static/corner-left.png" alt="detalhes de arabesco esquerdo"/>
-            <img class="arabescoDireito" src="https://cdn-hogwartslegacy.warnerbrosgames.com/static/corner-right.png"alt="detalhes de arabesco direito"/>
-            <h1 class="h1">Seja bem-vindo ao universo mágico de</h1>
-            <img class="logoCentral" src="https://logodownload.org/wp-content/uploads/2017/07/harry-potter-logo-2.png"/>   <!-- logo do seja bem vindo -->
+        <div class="containerPrincipal">
+            <img class="containerPrincipal__bannerPrincipal" src="https://i.ibb.co/qdtyzVY/banner-Principal.png"/>
+            <img class="containerPrincipal__arabescoEsquerdo" src="https://cdn-hogwartslegacy.warnerbrosgames.com/static/corner-left.png" alt="detalhes de arabesco esquerdo"/>
+            <img class="containerPrincipal__arabescoDireito" src="https://cdn-hogwartslegacy.warnerbrosgames.com/static/corner-right.png"alt="detalhes de arabesco direito"/>
+            <h1 class="containerPrincipal__h1">Seja bem-vindo ao universo mágico de</h1>
+            <img class="containerPrincipal__logoCentral" src="https://logodownload.org/wp-content/uploads/2017/07/harry-potter-logo-2.png"/>   <!-- logo do seja bem vindo -->
         </div>
 
         <!-- categorias -->
-        <div class="categoriaFilmes">
-            <img class="img" src="https://i.ibb.co/0CxKsHd/banner-Filmes.png"/>
-            <h3 class="title">Filmes</h3>
-            <p class="descritivo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium condimentum massa pretium 
-                ullamcorper. Vivamus vitae placerat massa. Donec porttitor posuere nisi in porta. Nullam vel 
-                vehicula justo, sit amet facilisis lectus. Nam non igula nec enim placerat aliquet ut 
-                vitae nulla. In dictum quam metus, eleifend suscipit neque convallis non. Duis rhoncus ultrices 
-                massa, et dapibus eros aliquam finibus. Pellentesque non maximus  lacus. Aliquam commodo massa ac 
-                leo consequat mollis. 
-            </p>
+        <div class="categorias">
+            <div class="categoriaFilmes">
+                <img class="categoriaFilmes__img" src="https://i.ibb.co/0CxKsHd/banner-Filmes.png"/>
+                <h3 class="categoriaFilmes__title"><a href="filmes.html">Filmes</a></h3>
+                <p class="categoriaFilmes__descritivo">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium condimentum massa pretium 
+                    ullamcorper. Vivamus vitae placerat massa. Donec porttitor posuere nisi in porta. Nullam vel 
+                    vehicula justo, sit amet facilisis lectus. Nam non igula nec enim placerat aliquet ut 
+                    vitae nulla. In dictum quam metus, eleifend suscipit neque convallis non. Duis rhoncus ultrices 
+                    massa, et dapibus eros aliquam finibus. Pellentesque non maximus  lacus. Aliquam commodo massa ac 
+                    leo consequat mollis. 
+                </p>
+            </div>
+            <div class="categoriaLivros">
+                <img class="categoriaLivros__img" src="https://i.ibb.co/8YZcKwr/banner-Livros.png"/>
+                <h3 class="categoriaLivros__title"><a href="livros.html">Livros</a></h3>
+                <p class="categoriaLivros__descritivo">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium condimentum massa 
+                    pretium ullamcorper. Vivamus vitae placerat massa. Donec porttitor posuere nisi in porta. 
+                    Nullam vel vehicula justo, sit amet facilisis lectus. Nam non igula nec enim placerat 
+                    aliquet ut vitae nulla. In dictum quam metus, eleifend suscipit neque convallis non. 
+                    Duis rhoncus ultrices massa, et dapibus eros aliquam finibus. Pellentesque non maximus lacus. 
+                    Aliquam commodo massa ac leo consequat mollis. 
+                </dipv>
+            </div>
+            <div class="categoriaPersonagens">
+                <img class="categoriaPersonagens__img" src="https://i.ibb.co/n1SYFvr/banner-Personagens.png"/>
+                <h3 class="categoriaPersonagens__title"><a href="personagens.html">Personagens</a></h3>
+                <p class="categoriaPersonagens__descritivo">
+                  A saga Harry Potter e seus inúmeros personagens encantam o mundo desde que o primeiro livro da 
+                  franquia foi lançado, em junho de 1997. Ao todo, foram sete romances escritos pela autora J. K. 
+                  Rowling, todos com um sucesso fenomenal de vendas, o que fez com que a série se tornasse a best-seller 
+                  da história. Diversos fatores podem contribuir para esse êxito, mas com certeza, a complexidade e 
+                  singularidade dos personagens é um dos motivos pelo qual a saga é tão popular.
+                </p>
+            </div>
         </div>
-        <div class="categoriaLivros">
-            <img class="img" src="https://i.ibb.co/8YZcKwr/banner-Livros.png"/>
-            <h3 class="title">Livros</h3>
-            <p class="descritivo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium condimentum massa 
-                pretium ullamcorper. Vivamus vitae placerat massa. Donec porttitor posuere nisi in porta. 
-                Nullam vel vehicula justo, sit amet facilisis lectus. Nam non igula nec enim placerat 
-                aliquet ut vitae nulla. In dictum quam metus, eleifend suscipit neque convallis non. 
-                Duis rhoncus ultrices massa, et dapibus eros aliquam finibus. Pellentesque non maximus lacus. 
-                Aliquam commodo massa ac leo consequat mollis. 
-            </dipv>
-        </div>
-        <div class="categoriaPersonagens">
-            <img class="img" src="https://i.ibb.co/n1SYFvr/banner-Personagens.png"/>
-            <h3 class="title">Personagens</h3>
-            <p class="descritivo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium condimentum massa pretium 
-                ullamcorper. Vivamus vitae placerat massa. Donec porttitor posuere nisi in porta. Nullam vel 
-                vehicula justo, sit amet facilisis lectus. Nam non ligula nec enim placerat aliquet ut vitae 
-                nulla. In dictum quam metus, eleifend suscipit neque convallis non. Duis rhoncus ultrices massa, 
-                et dapibus eros aliquam finibus. Pellentesque non maximus lacus. Aliquam commodo massa ac leo 
-                consequat mollis.
-            </p>
-        </div>
+        
+        <h2 class="casasHogwarts">Casas de Hogwarts</h2>
 
         <div class="boxCasas"> <!--Casas de Hogwarts-->
-            <h2 class="title">Casas de Hogwarts</h2>
-            <img class="img" src="https://i.ibb.co/K2CKZN9/casasHP.png"/> <!-- brasão das casas -->
-
-            <div class="grifinoria"> <!-- box casa Grifnoria --> 
-                <h3 class="title">Grifinória</h3>
-                <p class="descritivo">
-                    Lar dos bravos e cavalheiros. A Casa valoriza feitos de coragem e superação pessoal que costumam 
-                    ser <br>realizados por altruísmo. Seus estudantes tendem <br>a ser bastante aventureiros, mas se destacam,<br> 
-                    sobretudo, pela lealdade.
-                </p>
-                <p class="membros">
-                    Alvo Dumbledore, Harry Potter e Minerva McGonagall são<br/>alguns dos membros mais conhecidos da Casa.
-                </p>
-             </div>
-           
-            <div class="sonserina"><!-- box casa Sonserina -->
-                <h3 class="title">Sonserina</h3>
-                <p class="descritivo">
-                    A casa Sonserina têm como características, a ambição e a grandeza, por isso estão sempre se 
-                    dedicando a alcançar e expandir metas e se empenhando <br/>com inteligência em diversas áreas da magia.
-                </p>
-                <p class="membros">
-                    Merlin, Tom Riddle, Draco Malfoy e Dolores Umbridge são<br/>alguns dos membros mais conhecidos da Casa.
-                </p>
-            </div>
-
-            <div class="lufalufa">  <!-- box casa Lufa Lufa --> 
-                <h3 class="title">Lufa-lufa</h3>
-                <p class="descritivo">
-                    Os estudantes da Lufa-Lufa são dedicados, <br/>pacientes e honestos. Suas 
-                    características os tornam <br>trabalhadores árduos e modestos, sendo receptivos a todos os demais 
-                    tipos de bruxos.
-                </p>
-                <p class="principaisMembros">
-                    Newt Scamander, Cedrico Diggory e Ninfadora Tonks são<br/>alguns dos membros mais conhecidos da Casa.
-                </p>
-            </div>
-
-            <div class="corvinal"> <!-- box casa Corvinal --> 
-                <h3 class="title">Corvinal</h3>
-                <p class="descritivo">
-                    Os bruxos pertencentes à Corvinal se destacam por sua exímia inteligência.
-                    São características principais a sabedoria, criatividade e personalidade única.
-                </p>
-                <p class="membros">
-                    Luna Lovegood, Gilderoy Lockhart e Garrick Olivaras são<br/>alguns dos membros mais conhecidos da Casa.
-                </p>
-            </div>
+        <div class="grifinoria"><!-- box casa Grifnoria -->
+            <h3 class="grifinoria__title">Grifinória</h3>
+            <p class="grifinoria__descritivo">
+            Lar dos bravos e cavalheiros. A Casa valoriza feitos de coragem e
+            superação pessoal que costumam ser <br>realizados por altruísmo.
+            Seus estudantes tendem <br>a ser bastante aventureiros, mas se
+            destacam, <br>sobretudo, pela lealdade.
+            </p>
+            <p class="grifinoria__membros">
+            Alvo Dumbledore, Harry Potter e Minerva McGonagall são<br />alguns dos
+            membros mais conhecidos da Casa.
+            </p>
         </div>
+
+        <div class="sonserina"><!-- box casa Sonserina -->
+          <h3 class="sonserina__title">Sonserina</h3>
+          <p class="sonserina__descritivo">
+          A casa Sonserina têm como características, a ambição e a grandeza, por
+          isso estão sempre se dedicando a alcançar e expandir metas e se
+          empenhando <br />com inteligência em diversas áreas da magia.
+          </p>
+          <p class="sonserina__membros">
+          Merlin, Tom Riddle, Draco Malfoy e Dolores Umbridge são<br />alguns
+          dos membros mais conhecidos da Casa.
+          </p>
+      </div>
+
+        <div class="lufalufa"><!-- box casa Lufa Lufa -->
+            <h3 class="lufalufa__title">Lufa-lufa</h3>
+            <p class="lufalufa__descritivo">
+            Os estudantes da Lufa-Lufa são dedicados, <br>pacientes e honestos.
+            Suas características os <br>tornam trabalhadores árduos e modestos,
+            sendo receptivos a todos os demais tipos de bruxos.
+            </p>
+            <p class="lufalufa__principaisMembros">
+            Newt Scamander, Cedrico Diggory e Ninfadora Tonks são<br>alguns dos
+            membros mais conhecidos da Casa.
+            </p>
+        </div>
+
+        <div class="corvinal"><!-- box casa Corvinal -->
+            <h3 class="corvinal__title">Corvinal</h3>
+            <p class="corvinal__descritivo">
+            Os bruxos pertencentes à Corvinal se destacam por sua exímia
+            inteligência. São características principais a sabedoria, criatividade
+            e personalidade única.
+            </p>
+            <p class="corvinal__membros">
+            Luna Lovegood, Gilderoy Lockhart e Garrick Olivaras são<br />alguns
+            dos membros mais conhecidos da Casa.
+            </p>
+        </div>
+        </div>
+        <img class="boxCasas__img" src="https://i.ibb.co/K2CKZN9/casasHP.png"/><!-- brasão das casas -->
 
 
         <!-- Subcategorias -->
-        <div class="subCategorias">
-            <div class="comunidade">
-                <img src="https://i.ibb.co/VBwXfB1/banner-Comunidade.png"/> 
-                <div class="title">Comunidade</div>
+            <div class="subCategorias">
+                <div class="subCategorias__comunidade">
+                    <img src="https://i.ibb.co/VBwXfB1/banner-Comunidade.png" />
+                    <div class="subCategorias__comunidade-title"><a href="comunidade.html">Comunidade</a></div>
+                </div>
+                <div class="subCategorias__lojas">
+                    <img src="https://i.ibb.co/3TWMFLV/banner-Lojas.png" />
+                    <div class="subCategorias__lojas--title"><a href="loja.html">Loja</a></div>
+                </div>
+                <div class="subCategorias__restaurantes">
+                    <img src="https://i.ibb.co/mRwdYVX/banner-Restaurantes.png" />
+                    <div class="subCategorias__restaurantes--title"><a href="restauranres.html">Restaurantes</a></div>
+                </div>
             </div>
-            <div class="lojas">
-                <img src="https://i.ibb.co/3TWMFLV/banner-Lojas.png"/>
-                <div class="title">Lojas</div>
-            </div>
-            <div class="restaurantes">
-                <img src="https://i.ibb.co/mRwdYVX/banner-Restaurantes.png"/>
-                <div class="title">Restaurantes</div>
-            </div>
-        </div>
 
         <!-- Rodapé -->
         <footer class="navBarFooter">
-            <img class="logoFooter" src="https://logodownload.org/wp-content/uploads/2017/07/harry-potter-logo-2.png"/>
-            <div class="footer">
+            <img class="navBarFooter__logo" src="https://logodownload.org/wp-content/uploads/2017/07/harry-potter-logo-2.png"/>
+            <div class="navBarFooter__nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="personagens.html">Personagens</a></li>
                 <li><a href="filmes.html">Filmes</a></li>
@@ -162,11 +210,15 @@
                 <li><a href="Comunidade.html">Comunidade</a></li>
             </div>
             <hr>
-            <div class="copyright">
+            <div class="navBarFooter__copyright">
                 <p>
                     © Copyright 2023, All Rights Reserved - Harry Potter Team
                 </p>
             </div>
-        </footer>
+        </footer>    
+    
+    
+        <script src="assets/js/script.js"></script>
+
 </body>
 </html>
