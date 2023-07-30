@@ -9,7 +9,7 @@
 }
 .navbar-brand{
     padding: 10px;
-    margin: 25px;
+    margin: 0px;
 }
 .nav-item{
     padding: 20px;
@@ -32,9 +32,9 @@
 }
 
 .imagem-principal{
-    margin-left: 37px;
     padding: 0px;
     display: flex;
+    justify-content: center;
 }
 
 
