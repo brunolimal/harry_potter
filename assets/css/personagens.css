@@ -1,0 +1,98 @@
+
+.content {
+    background-color: black;
+    padding: 84px;
+    font-family: 'Wizard World';
+  }
+
+  .titulo__personagens {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    color: white;
+    }
+
+  .menu {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    gap: 90px;
+    background-color: black;
+    font-family: 'Wizard World';
+  }
+
+  .menu .menu__lista {
+    list-style: none;
+    gap: 110px;
+    display: flex;
+    align-content: center;
+    color: white;
+  }
+
+  .card-personagem {
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    border: 100px;
+    background-color: rgb(82, 88, 95);
+    color: white;
+  }
+
+  .card-personagem .card__info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+
+  .card-personagem .card__descrição {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 40px;
+    align-items: center;
+
+  }
+
+  .card-personagem .card__image {
+    border-radius: 100%;
+    min-width: 321px;
+    width: 321px;
+    height: 337px;
+    object-fit: cover;
+  }
+
+  .card__image.card__image--right {
+    margin-right: -90px;
+  }
+
+  .card__image.card__image--left {
+    margin-left: -90px;
+  }
+
+  
+  .personagens {
+  align-content: center;
+  gap: 50px;
+}
+
+.menu__footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    gap: 90px;
+    background-color: black;
+    font-family: 'Wizard World';
+}
+
+.menu__footer .lista__footer {
+  list-style: none;
+  gap: 110px;
+  display: flex;
+  align-content: center;
+  color: white;
+}
