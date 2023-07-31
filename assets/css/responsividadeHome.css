@@ -1,3 +1,4 @@
+
 .mobile-menu-icon {
   display: none;
 }
@@ -7,7 +8,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .nav-bar {
+  /*.nav-bar {
     padding: 1.5rem 4rem;
   }
 
@@ -39,23 +40,17 @@
 
   .open {
     display: block;
-  }
+  }*/
 
-  .nav-logo {
-    height: 45px;
+  .navbar-logo {
+    height: 100px;
   }
 
   .containerPrincipal__bannerPrincipal {
     width: 100%;
   }
-
-  .containerPrincipal__arabescoDireito {
-    width: 120px;
-    height: 100px;
-    left: 160px;
-    position: relative;
-  }
-
+  
+  .containerPrincipal__arabescoDireito,
   .containerPrincipal__arabescoEsquerdo {
     width: 120px;
     height: 100px;
@@ -87,132 +82,99 @@
     padding-left: 20px;
   }
 
-  .categoriaFilmes {
-    width: 350px;
+    /* Filmes */
+
+  .categoriaFilmes,
+  .categoriaLivros,
+  .categoriaPersonagens {
+    width: 410px;
     height: 402px;
-    position: relative;
     top: 120px;
   }
 
-  .categoriaFilmes__title {
-    left: 15px;
-    position: absolute;
-    color: white;
-    font-size: 40px;
-    font-family: Wizard World;
-    font-weight: 400;
-    line-height: 50px;
-    word-wrap: break-word;
-    margin-top: 0px;
-    margin-bottom: 10px;
+  .categoriaFilmes__title,
+  .categoriaLivros__title,
+  .categoriaLivros__title,
+  .categoriaPersonagens__title {
+    left: 10px;
+    margin-bottom: 0px;
   }
 
-  .categoriaFilmes__descritivo {
-    color: white;
-    font-size: 20px;
-    font-family: DM Sans;
-    line-height: 20px;
-    word-wrap: break-word;
-    width: 320px;
+  .categoriaFilmes__descritivo,
+  .categoriaPersonagens__descritivo,
+  .categoriaLivros__descritivo {
+    width: 380px;
     left: 15px;
-    top: 110px;
-    position: absolute;
+    top: 100px;
+  }
+
+  .categoriaFilmes__img,
+  .categoriaLivros__img,
+  .categoriaPersonagens__img{
+    display: none;
+  }
+
+  .boxCasas{
+    padding-top: 30px;
+  }
+  .boxCasas>div {
+    width: 400px;
+    height: 300px;
+  }
+
+  .grifinoria__descritivo,
+  .sonserina__descritivo,
+  .corvinal__descritivo,
+  .lufalufa__descritivo {
+    width: 340px;
+    left: 10px;
+    top: 75px;
     text-align: justify;
-    margin-top: 0px;
   }
 
-  .categoriaFilmes__img {
-    display: none;
-  }
-
-  /* Livros */
-
-  .categoriaLivros {
-    width: 350px;
-    height: 402px;
-    top: 130px;
-    position: relative;
-    background: rgba(217, 217, 217, 0.08);
-    margin-top: 0px;
-    margin-bottom: 10px;
-  }
-
-  .categoriaLivros__img {
-    display: none;
-  }
-
-  .categoriaLivros__title {
-    left: 15px;
+  .grifinoria__title,
+  .sonserina__title,
+  .lufalufa__titl,
+  .corvinal__title {
+    left: 10px;
     top: 20px;
     position: absolute;
-    color: white;
-    font-size: 40px;
-    font-family: Wizard World;
-    font-weight: 400;
-    line-height: 50px;
-    word-wrap: break-word;
+    text-align: left;
   }
 
-  .categoriaLivros__descritivo {
-    color: white;
-    font-size: 20px;
-    font-family: DM Sans;
-    font-weight: 400;
-    line-height: 25px;
-    word-wrap: break-word;
-    width: 640px;
-    left: 15px;
-    top: 110px;
-    position: absolute;
-    text-align: justify;
+  .grifinoria__membros,
+  .sonserina__membros,
+  .lufa-lufa__membros,
+  .corvinal__membros {
+    width: 340px;
+    left: 10px;
+    top: 230px;
   }
 
-  .categoriaPersonagens {
-    width: 350px;
-    height: 402px;
-    top: 140px;
-    position: relative;
-    background: rgba(217, 217, 217, 0.08);
-  }
+ 
 
-  .categoriaPersonagens__img {
+  .boxCasas__img,
+  .subCategorias,
+  .navBarFooter__nav{
     display: none;
   }
 
-
-  .categoriaPersonagens__title {
-    left: 15px;
-    top: 50px;
-    position: absolute;
-    color: white;
-    font-size: 40px;
-    font-family: Wizard World;
-    font-weight: 400;
-    line-height: 50px;
-    word-wrap: break-word;
-  }
-
-  .categoriaPersonagens__descritivo {
-    width: 640px;
-    left: 55px;
-    top: 132px;
-    position: absolute;
-    color: white;
-    font-size: 20px;
-    font-family: DM Sans;
-    font-weight: 400;
-    line-height: 25px;
-    word-wrap: break-word;
-    text-align: justify;
+  .casasHogwarts{
   }
 
 }
 
-/*--- Para telas Grandes--*/
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
+  .container-fluid{
+    justify-content: center !important;
+  }
 
-  .body {
-    justify-content: center;
+  .containerPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-around;
+  
   }
 
   .containerPrincipal__bannerPrincipal{
@@ -243,42 +205,36 @@
   
   /* box com grid*/
   .boxCasas {
-    display: grid;
-    grid-template-columns: 594px 594px;
-    grid-template-rows: repeat(2, 275px);
+    display: flex;
     text-align: center;
     justify-content: center;
     gap: 10px;
-    grid-template-areas:
-      "grifinoria sonserina "
-      "lufalufa corvinal";
   }
 
-  .categorias{
-    padding-left: 0;
-    display: grid;
-    justify-content: space-between;
-    gap: 10px;
-    grid-template-columns: 1229px;
-    grid-template-areas:
-    "filmes"
-    "livros"
-    "personagens";
+  .boxCasas__img{
+    justify-content: center;
   }
 
   .boxCasas-imgbox{
     width: 100%;
   }
 
-  .subCategorias {
-    display: flex;
-    left: -368px;
+  .subCategorias{
+    display: grid;
+    position: absolute;
+    left: 7%;
+    top:3410px;
+    justify-content: center;
   }
 
-  .navBarFooter{
-    width: 1600px;
+  }
+  .subCategorias__comunidade,
+  .subCategorias__lojas,
+  .subCategorias__restaurantes {
+    display: flex;
+    position: relative;
+    top: 20px;
     justify-content: center;
-    top: 3885px;
   }
 
 }

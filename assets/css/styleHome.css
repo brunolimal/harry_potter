@@ -7,22 +7,39 @@
   margin: 0px; 
 }
 
-a {
+/* Sessão do MENU */
+
+.navbar-nav {
+  list-style: none;
+  padding: 30px;
+  color: white;
+  display: flex;
+  gap: 5px;
+  margin-left: 50px;
+}
+
+.navbar-logo {
+  height: 110px;
+  padding: 20px 50px;
+}
+
+.navbar-nav li:first-child {
+  border-bottom: 2px white solid;
+}
+
+.nav-item .nav-link {
   text-decoration: none;
   color: white;
+  font-family: DM sans;
+  padding: 0px;
 }
 
-header {
-  background-color: black;
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0px !important;
 }
 
-.nav-bar {
-  display: flex;
-}
-
-.nav-logo {
-  height: 70px;
-  padding: 20px 50px;
+.nav-item .nav-link:hover {
+  color: #917a50;
 }
 
 .nav-item {
@@ -39,15 +56,12 @@ header {
   color: gray;
 }
 
-
+/*
 .nav-list {
   display: flex;
   align-items: center;
 }
 
-.nav-list li:first-child {
-  border-bottom: 2px white solid;
-}
 
 .nav-list ul {
   display: flex;
@@ -55,6 +69,51 @@ header {
   list-style: none;
   padding-left: 40px;
 }
+
+/* -- Header antigo
+.header {
+  width: 1440px;
+  left: 49px;
+  top: 31px;
+  background-color: black;
+  display: flex;
+}
+
+.header__logo {
+  width: 270px;
+  height: 115px;
+  padding: 30px 10px 20px 50px;
+}
+
+*/
+
+/*
+header nav {
+  display: flex;
+}
+
+
+.header__nav-list {
+  list-style: none;
+  gap: 50px;
+  display: flex;
+  font-family: DM Sans;
+  font-size: 18px;
+  color: white;
+  justify-content: center;
+  line-height: 30px;
+  padding-top: 45px;
+}
+
+.header__nav-list a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__nav-list li:first-child {
+  border-bottom: 2px white solid;
+}
+--------- */
 
 .containerPrincipal {
   display: flex;
@@ -66,7 +125,8 @@ header {
 
 .containerPrincipal__bannerPrincipal {
   width: 100%;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .containerPrincipal__arabescoDireito {
@@ -84,7 +144,7 @@ header {
 
 .containerPrincipal__h1 {
   left: 330px;
-  top: 950px;
+  top: 990px;
   position: absolute;
   color: white;
   font-size: 40px;
@@ -126,14 +186,20 @@ header {
 
 .categorias {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding-left: 4%;
+  /*padding-left: 100px;*/
+  justify-content: center;
   gap: 20px;
 }
 
+.categorias a {
+  text-decoration: none;
+  color: white;
+}
+
 .categorias a:hover {
-  color: #646368;
+  color: #917a50;
 
 }
 
@@ -143,6 +209,9 @@ header {
   grid-area: filmes;
   width: 1229px;
   height: 402px;
+  /*left: 120px;
+  top: 1275px;
+  position: absolute;*/
   position: relative;
   background: rgba(217, 217, 217, 0.08);
 }
@@ -186,6 +255,9 @@ header {
 .categoriaLivros {
   width: 1229px;
   height: 402px;
+  /*left: 120px;
+  top: 1710px;
+  position: absolute;*/
   position: relative;
   background: rgba(217, 217, 217, 0.08);
   grid-area: livros;
@@ -231,6 +303,9 @@ header {
   grid-area: personagens;
   width: 1229px;
   height: 402px;
+  /*left: 120px;
+  top: 2145px;
+  position: absolute;*/
   position: relative;
   background: rgba(217, 217, 217, 0.08);
 }
@@ -272,18 +347,27 @@ header {
 /* --Sessão das Casas de Hogwarts */
 
 .casasHogwarts {
+  display: flex;
   color: white;
   font-family: Wizard World;
   font-size: 35px;
   font-weight: 400;
   line-height: 43px;
-  padding-left: 40%;
+  padding: 30px 0px 20px 40%;
 }
 
-h2{
+/* box com grid
+.boxCasas {
+  display: grid;
+  grid-template-columns: 594px 594px;
+  grid-template-rows: repeat(2, 275px);
   text-align: center;
-  display: flex;
-}
+  justify-content: center;
+  gap: 10px;
+  grid-template-areas:
+    "grifinoria sonserina "
+    "lufalufa corvinal";
+}*/
 
 /* box com display flex */
 
@@ -312,6 +396,17 @@ h2{
   top: -486px;
 }
 
+/*
+.boxCasas {
+  width: 1440px;
+  height: 600px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}*/
+
 .grifinoria {
   grid-area: grifinoria;
   background: #7474742e;
@@ -321,7 +416,7 @@ h2{
 
 .grifinoria__title {
   left: 22px;
-  top: 0px;
+  top: 20px;
   position: absolute;
   color: white;
   font-size: 35px;
@@ -337,7 +432,7 @@ h2{
 .grifinoria__descritivo {
   width: 478px;
   left: 22px;
-  top: 65px;
+  top: 75px;
   position: absolute;
   color: white;
   font-size: 20px;
@@ -366,7 +461,7 @@ h2{
 
 .sonserina__title {
   left: 400px;
-  top: 0px;
+  top: 20px;
   position: absolute;
   text-align: right;
   color: white;
@@ -384,7 +479,7 @@ h2{
 .sonserina__descritivo {
   width: 443px;
   left: 130px;
-  top: 65px;
+  top: 75px;
   position: absolute;
   text-align: right;
   color: white;
@@ -417,7 +512,7 @@ h2{
 
 .corvinal__title {
   left: 400px;
-  top: 0px;
+  top: 20px;
   position: absolute;
   text-align: right;
   color: white;
@@ -435,7 +530,7 @@ h2{
 .corvinal__descritivo {
   width: 379px;
   left: 190px;
-  top: 65px;
+  top: 75px;
   position: absolute;
   text-align: right;
   color: white;
@@ -470,7 +565,7 @@ h2{
 
 .lufalufa__title {
   left: 22px;
-  top: 0px;
+  top: 20px;
   position: absolute;
   color: white;
   font-size: 35px;
@@ -486,7 +581,7 @@ h2{
 .lufalufa__descritivo {
   width: 462px;
   left: 22px;
-  top: 65px;
+  top: 75px;
   position: absolute;
   color: white;
   font-size: 20px;
@@ -497,7 +592,7 @@ h2{
 
 }
 
-.lufalufa__principaisMembros {
+.lufalufa__membros {
   width: 478px;
   left: 22px;
   top: 200px;
@@ -512,18 +607,27 @@ h2{
 
 .subCategorias {
   display: grid;
-  grid-template-areas:
-    "restaurantes lojas comunidade";
-  grid-template-columns: auto;
-  justify-content: center;
-  width: 20%;
+  width: 600px;
+  justify-content: space-around;
   height: 460px;
   color: white;
   font-size: 25px;
   font-family: Wizard World;
   letter-spacing: 3px;
-  top: -350px;
-  position: relative;
+  top: 3285px;
+  position: absolute;
+}
+.subCategorias div{
+  display: grid;
+  grid-template-areas:
+    "restaurantes lojas comunidade";
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+.subCategorias a{
+    text-decoration: none;
+    color: white;
 }
 
 .subCategorias__comunidade {
@@ -600,9 +704,9 @@ h2{
 
 .navBarFooter {
   width: 1350px;
-  left: 0px;
-  top: 3827px;
-  position: absolute;
+  left: 7%;
+  top: 160px;
+  position: relative;
   background-color: black;
 }
 
@@ -638,11 +742,13 @@ h2{
   color: gray;
 }
 
-hr {
+.hr {
   justify-content: center;
-  width: 80%;
   margin-top: 20px;
   background: white;
+  height: 2px;
+  opacity: unset;
+  margin: 1px 10%;
 }
 
 .navBarFooter__copyright {
@@ -658,4 +764,6 @@ hr {
   line-height: 19px;
   text-align: center;
   font-family: DM Sans;
+  padding-top: 10px;
 }
+

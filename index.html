@@ -7,16 +7,56 @@
   <link rel="stylesheet" href="./assets/css/styleHome.css">
   <link rel="stylesheet" href="./assets/css/responsividadeHome.css">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
   <link href="https://fonts.cdnfonts.com/css/wizard-world" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="https://www.nicepng.com/png/detail/439-4398678_harry-potter-logo-png-download-harry-potter-logo.png">
-
+  
   <title>Harry Potter - Projeto Final</title>
 </head>
 
-<header>
-
+<header> 
+    
     <!-- Menu Header com Bootstrap -->
-    <nav class="nav-bar">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <img class="navbar-logo "
+          src="https://logodownload.org/wp-content/uploads/2017/07/harry-potter-logo-2.png" alt="Logo Harry Potter">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" data-bs-theme="dark">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="personagens.html">Personagens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="filmes.html">Filmes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="livros.html">Livros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="restaurante.html">Restaurantes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hospedagens.html">Hospedagens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="loja.html">Loja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Comunidade.html">Comunidade</a>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- <nav class="nav-bar">
       <div>
           <img class="nav-logo" src="https://logodownload.org/wp-content/uploads/2017/07/harry-potter-logo-2.png" alt="Logo Harry Potter">
       </div>
@@ -29,7 +69,7 @@
               <li class="nav-item"><a href="restaurante.html" > Restaurantes</a></li>
               <li class="nav-item"><a href="hospedagens.html" > Hospedagens</a></li>
               <li class="nav-item"><a href="loja.html" > Loja</a></li>
-              <li class="nav-item"><a href="Comunidade.html" > Comunidade</a></li>
+              <li class="nav-item"><a href="comunidade.html" > Comunidade</a></li>
           </ul>
       </div>
 
@@ -48,7 +88,27 @@
         <li class="nav-item"><a href="loja.html" > Loja</a></li>
         <li class="nav-item"><a href="Comunidade.html" > Comunidade</a></li>
       </ul>
+  </div> -->
+    
+    <!-- Menu Header antigo
+    <div class="header">
+      <img class="header__logo" src="https://logodownload.org/wp-content/uploads/2017/07/harry-potter-logo-2.png" />
+    <nav>
+        <ul>
+        <div class="header__nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personagens.html">Personagens</a></li>
+            <li><a href="filmes.html">Filmes</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="restaurante.html">Restaurantes</a></li>
+            <li><a href="hospedagens.html">Hospedagens</a></li>
+            <li><a href="loja.html">Loja</a></li>
+            <li><a href="Comunidade.html">Comunidade</a></li>
+        </div>
+        </ul>
+    </nav>
   </div>
+  -->
 </header>
 
 <body class="body">
@@ -67,99 +127,89 @@
                 <img class="categoriaFilmes__img" src="https://i.ibb.co/0CxKsHd/banner-Filmes.png"/>
                 <h3 class="categoriaFilmes__title"><a href="filmes.html">Filmes</a></h3>
                 <p class="categoriaFilmes__descritivo">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium condimentum massa pretium 
-                    ullamcorper. Vivamus vitae placerat massa. Donec porttitor posuere nisi in porta. Nullam vel 
-                    vehicula justo, sit amet facilisis lectus. Nam non igula nec enim placerat aliquet ut 
-                    vitae nulla. In dictum quam metus, eleifend suscipit neque convallis non. Duis rhoncus ultrices 
-                    massa, et dapibus eros aliquam finibus. Pellentesque non maximus  lacus. Aliquam commodo massa ac 
-                    leo consequat mollis. 
+                    Harry Potter é uma das sagas mais amadas de todos os tempos nos cinemas e nos livros. Já concluída, 
+                    a série hoje tem uma legião de fãs e longa-metragens muito famosos. A Saga Harry Potter é a série mais bem sucedida da 
+                    história do cinema mundial. Os oito filmes faturaram mais de 6,5 bilhões de dólares nos cinemas de todo o mundo, e ao
+                    todo somaram 12 indicações ao Oscar. Todos os longas foram baseados nos sete livros escritos pela escritora inglesa J.K.Rowling, inevitáveis best sellers mundiais. 
                 </p>
             </div>
             <div class="categoriaLivros">
                 <img class="categoriaLivros__img" src="https://i.ibb.co/8YZcKwr/banner-Livros.png"/>
                 <h3 class="categoriaLivros__title"><a href="livros.html">Livros</a></h3>
                 <p class="categoriaLivros__descritivo">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium condimentum massa 
-                    pretium ullamcorper. Vivamus vitae placerat massa. Donec porttitor posuere nisi in porta. 
-                    Nullam vel vehicula justo, sit amet facilisis lectus. Nam non igula nec enim placerat 
-                    aliquet ut vitae nulla. In dictum quam metus, eleifend suscipit neque convallis non. 
-                    Duis rhoncus ultrices massa, et dapibus eros aliquam finibus. Pellentesque non maximus lacus. 
-                    Aliquam commodo massa ac leo consequat mollis. 
+                    Desde que o primeiro livro da Saga Harry Potter foi publicado, lá em 1997, a série de livros se 
+                    tornou um fenômeno de sucesso por todo o mundo, já tendo ganho tradução em mais de 80 idiomas. E 
+                    esse "boom" só aumentou com os filmes, com a primeira adaptação chegando aos cinemas em 2001.
                 </dipv>
             </div>
             <div class="categoriaPersonagens">
                 <img class="categoriaPersonagens__img" src="https://i.ibb.co/n1SYFvr/banner-Personagens.png"/>
                 <h3 class="categoriaPersonagens__title"><a href="personagens.html">Personagens</a></h3>
                 <p class="categoriaPersonagens__descritivo">
-                  A saga Harry Potter e seus inúmeros personagens encantam o mundo desde que o primeiro livro da 
-                  franquia foi lançado, em junho de 1997. Ao todo, foram sete romances escritos pela autora J. K. 
-                  Rowling, todos com um sucesso fenomenal de vendas, o que fez com que a série se tornasse a best-seller 
-                  da história. Diversos fatores podem contribuir para esse êxito, mas com certeza, a complexidade e 
-                  singularidade dos personagens é um dos motivos pelo qual a saga é tão popular.
+                  A saga e seus inúmeros personagens encantam o mundo desde que o primeiro livro da foi lançado, em 
+                  junho de 1997. Ao todo, foram sete, todos com um sucesso fenomenal  de vendas, o que fez com que a série se tornasse a best-seller da história. Diversos fatores 
+                  contribuiram para esse êxito, mas a complexidade e singularidade dos personagens é um dos motivos pelo qual a saga é tão popular.
                 </p>
             </div>
         </div>
-
+        
         <h2 class="casasHogwarts">Casas de Hogwarts</h2>
 
         <div class="boxCasas"> <!--Casas de Hogwarts-->
-        <div class="grifinoria"><!-- box casa Grifnoria -->
-            <h3 class="grifinoria__title">Grifinória</h3>
-            <p class="grifinoria__descritivo">
-            Lar dos bravos e cavalheiros. A Casa valoriza feitos de coragem e
-            superação pessoal que costumam ser <br>realizados por altruísmo.
-            Seus estudantes tendem <br>a ser bastante aventureiros, mas se
-            destacam, <br>sobretudo, pela lealdade.
-            </p>
-            <p class="grifinoria__membros">
-            Alvo Dumbledore, Harry Potter e Minerva McGonagall são<br />alguns dos
-            membros mais conhecidos da Casa.
-            </p>
-        </div>
+            <div class="grifinoria"><!-- box casa Grifnoria -->
+                <h3 class="grifinoria__title">Grifinória</h3>
+                <p class="grifinoria__descritivo">
+                Lar dos bravos e cavalheiros. A Casa valoriza feitos de coragem e
+                superação pessoal que costumam ser <br>realizados por altruísmo.
+                Seus estudantes tendem <br>a ser bastante aventureiros, mas se
+                destacam, <br>sobretudo, pela lealdade.
+                </p>
+                <p class="grifinoria__membros">
+                Alvo Dumbledore, Harry Potter e Minerva McGonagall são<br />alguns dos
+                membros mais conhecidos da Casa.
+                </p>
+            </div>
 
-        <div class="sonserina"><!-- box casa Sonserina -->
-          <h3 class="sonserina__title">Sonserina</h3>
-          <p class="sonserina__descritivo">
-          A casa Sonserina têm como características, a ambição e a grandeza, por
-          isso estão sempre se dedicando a alcançar e expandir metas e se
-          empenhando <br />com inteligência em diversas áreas da magia.
-          </p>
-          <p class="sonserina__membros">
-          Merlin, Tom Riddle, Draco Malfoy e Dolores Umbridge são<br />alguns
-          dos membros mais conhecidos da Casa.
-          </p>
-      </div>
+            <div class="sonserina"><!-- box casa Sonserina -->
+                <h3 class="sonserina__title">Sonserina</h3>
+                <p class="sonserina__descritivo">
+                A casa Sonserina têm como características, a ambição e a grandeza, por
+                isso estão sempre se dedicando a alcançar e expandir metas e se
+                empenhando <br />com inteligência em diversas áreas da magia.
+                </p>
+                <p class="sonserina__membros">
+                Merlin, Tom Riddle, Draco Malfoy e Dolores Umbridge são<br />alguns
+                dos membros mais conhecidos da Casa.
+                </p>
+            </div>
 
-        <div class="lufalufa"><!-- box casa Lufa Lufa -->
-            <h3 class="lufalufa__title">Lufa-lufa</h3>
-            <p class="lufalufa__descritivo">
-            Os estudantes da Lufa-Lufa são dedicados, <br>pacientes e honestos.
-            Suas características os <br>tornam trabalhadores árduos e modestos,
-            sendo receptivos a todos os demais tipos de bruxos.
-            </p>
-            <p class="lufalufa__principaisMembros">
-            Newt Scamander, Cedrico Diggory e Ninfadora Tonks são<br>alguns dos
-            membros mais conhecidos da Casa.
-            </p>
-        </div>
+            <div class="lufalufa"><!-- box casa Lufa Lufa -->
+                <h3 class="lufalufa__title">Lufa-lufa</h3>
+                <p class="lufalufa__descritivo">
+                Os estudantes da Lufa-Lufa são dedicados, <br>pacientes e honestos.
+                Suas características os <br>tornam trabalhadores árduos e modestos,
+                sendo receptivos a todos os demais tipos de bruxos.
+                </p>
+                <p class="lufalufa__membros">
+                Newt Scamander, Cedrico Diggory e Ninfadora Tonks são<br>alguns dos
+                membros mais conhecidos da Casa.
+                </p>
+            </div>
 
-        <div class="corvinal"><!-- box casa Corvinal -->
-            <h3 class="corvinal__title">Corvinal</h3>
-            <p class="corvinal__descritivo">
-            Os bruxos pertencentes à Corvinal se destacam por sua exímia
-            inteligência. São características principais a sabedoria, criatividade
-            e personalidade única.
-            </p>
-            <p class="corvinal__membros">
-            Luna Lovegood, Gilderoy Lockhart e Garrick Olivaras são<br />alguns
-            dos membros mais conhecidos da Casa.
-            </p>
-        </div>
-        </div>
-        <div class="boxCasas-imgbox">
+            <div class="corvinal"><!-- box casa Corvinal -->
+                <h3 class="corvinal__title">Corvinal</h3>
+                <p class="corvinal__descritivo">
+                Os bruxos pertencentes à Corvinal se destacam por sua exímia
+                inteligência. São características principais a sabedoria, criatividade
+                e personalidade única.
+                </p>
+                <p class="corvinal__membros">
+                Luna Lovegood, Gilderoy Lockhart e Garrick Olivaras são<br />alguns
+                dos membros mais conhecidos da Casa.
+                </p>
+            </div>
             <img class="boxCasas__img" src="https://i.ibb.co/K2CKZN9/casasHP.png"/><!-- brasão das casas -->
         </div>
-
         <!-- Subcategorias -->
         <div class="subCategorias">
 
@@ -190,14 +240,15 @@
                 <li><a href="loja.html">Loja</a></li>
                 <li><a href="Comunidade.html">Comunidade</a></li>
             </div>
-            <hr>
+            <hr class="hr">
             <div class="navBarFooter__copyright">
                 <p>
                     © Copyright 2023, All Rights Reserved - Harry Potter Team
                 </p>
             </div>
-        </footer>
-
+        </footer>    
+    
+    
         <script src="assets/js/script.js"></script>
 
 </body>
