@@ -19,8 +19,8 @@
 }
 
 .navbar-brand{
-  padding: 35px;
-  margin: 0px;
+  height: 70px;
+  padding: 20px 50px;
 }
 
 .navbar-nav li:first-child {
