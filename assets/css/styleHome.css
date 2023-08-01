@@ -2,49 +2,32 @@
 
 .body {
   background-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0px; 
+
 }
 
 /* Sessão do MENU */
 
-.navbar-nav {
-  list-style: none;
-  padding: 30px;
-  color: white;
-  display: flex;
-  gap: 5px;
-  margin-left: 50px;
+.navbar-brand{
+  height: 70px;
+  padding: 20px 50px;
 }
 
-.navbar-logo {
-  height: 110px;
-  padding: 20px 50px;
+.navbar-nav{
+  gap: 30px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding: 0px !important;
 }
 
 .navbar-nav li:first-child {
   border-bottom: 2px white solid;
 }
 
-.nav-item .nav-link {
-  text-decoration: none;
-  color: white;
-  font-family: DM sans;
-  padding: 0px;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0px !important;
-}
-
 .nav-item .nav-link:hover {
   color: #917a50;
 }
 
-.nav-item {
-  margin: 0 15px;
-}
 .nav-item a {
   color: white;
   font-family: DM Sans;
@@ -52,68 +35,15 @@
   justify-content: center;
 }
 
-.nav-item a:hover {
-  color: gray;
-}
-
-/*
-.nav-list {
+.menu{
   display: flex;
-  align-items: center;
-}
-
-
-.nav-list ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding-left: 40px;
-}
-
-/* -- Header antigo
-.header {
-  width: 1440px;
-  left: 49px;
-  top: 31px;
-  background-color: black;
-  display: flex;
-}
-
-.header__logo {
-  width: 270px;
-  height: 115px;
-  padding: 30px 10px 20px 50px;
-}
-
-*/
-
-/*
-header nav {
-  display: flex;
-}
-
-
-.header__nav-list {
-  list-style: none;
-  gap: 50px;
-  display: flex;
-  font-family: DM Sans;
+  justify-content:space-evenly;
   font-size: 18px;
-  color: white;
-  justify-content: center;
-  line-height: 30px;
-  padding-top: 45px;
-}
-
-.header__nav-list a {
-  text-decoration: none;
+  padding: 5px;
+  list-style: none;
+  margin: 5px;
   color: white;
 }
-
-.header__nav-list li:first-child {
-  border-bottom: 2px white solid;
-}
---------- */
 
 .containerPrincipal {
   display: flex;
@@ -356,19 +286,6 @@ header nav {
   padding: 30px 0px 20px 40%;
 }
 
-/* box com grid
-.boxCasas {
-  display: grid;
-  grid-template-columns: 594px 594px;
-  grid-template-rows: repeat(2, 275px);
-  text-align: center;
-  justify-content: center;
-  gap: 10px;
-  grid-template-areas:
-    "grifinoria sonserina "
-    "lufalufa corvinal";
-}*/
-
 /* box com display flex */
 
 .boxCasas {
@@ -395,17 +312,6 @@ header nav {
   height: 417px;
   top: -486px;
 }
-
-/*
-.boxCasas {
-  width: 1440px;
-  height: 600px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-}*/
 
 .grifinoria {
   grid-area: grifinoria;
@@ -604,7 +510,7 @@ header nav {
 }
 
 /* --Sessão das Subcategorias Comunidades, Loja e Restaurantes */
-
+/*
 .subCategorias {
   display: grid;
   width: 600px;
@@ -617,12 +523,28 @@ header nav {
   top: 3285px;
   position: absolute;
 }
+
 .subCategorias div{
   display: grid;
   grid-template-areas:
     "restaurantes lojas comunidade";
   grid-template-columns: auto;
   justify-content: center;
+}
+*/
+
+.subCategorias{
+  display: flex;
+  justify-content: space-evenly;
+  /*width: 600px;*/
+  height: 460px;
+  color: white;
+  font-size: 25px;
+  font-family: Wizard World;
+  letter-spacing: 3px;
+  top: -350px;
+  flex-direction: row;
+  position: relative;
 }
 
 .subCategorias a{
@@ -633,10 +555,10 @@ header nav {
 .subCategorias__comunidade {
   width: 349px;
   height: 446px;
-  left: 748px;
+  /*left: 748px;*/
   top: 0px;
-  position: absolute;
-  grid-area: comunidade;
+  position: relative;
+  /*grid-area: comunidade;*/
 }
 
 .subCategorias__comunidade-title {
@@ -657,10 +579,10 @@ header nav {
 .subCategorias__lojas {
   width: 349px;
   height: 446px;
-  left: 374px;
+  /*left: 374px;*/
   top: 0px;
-  position: absolute;
-  grid-area: lojas;
+  position: relative;
+  /*grid-area: lojas;*/
 }
 
 .subCategorias__lojas--title {
@@ -683,7 +605,7 @@ header nav {
   height: 446px;
   left: 0px;
   top: 0px;
-  position: absolute;
+  position: relative;
   grid-area: restaurantes;
 }
 
@@ -703,9 +625,9 @@ header nav {
 }
 
 .navBarFooter {
-  width: 1350px;
-  left: 7%;
-  top: 160px;
+  /*width: 1350px;
+  left: 7%;*/
+  top: -300px;
   position: relative;
   background-color: black;
 }
@@ -756,7 +678,6 @@ header nav {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-
 .navBarFooter__copyright p {
   color: white;
   font-size: 14px;
@@ -766,4 +687,3 @@ header nav {
   font-family: DM Sans;
   padding-top: 10px;
 }
-
