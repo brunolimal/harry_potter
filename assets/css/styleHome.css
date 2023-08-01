@@ -2,6 +2,7 @@
 
 .body {
   background-color: black;
+
 }
 
 /* Sessão do MENU */
@@ -44,68 +45,12 @@
   color: white;
 }
 
-/*
-.menu{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.navbar-nav {
-  list-style: none;
-  padding: 30px;
-  color: white;
-  display: flex;
-  gap: 5px;
-  margin-left: 50px;
-}
-
-.navbar-brand{
-  height: 70px;
-  padding: 20px 50px;
-}
-
-.navbar-nav li:first-child {
-  border-bottom: 2px white solid;
-}
-
-.nav-item .nav-link {
-  text-decoration: none;
-  color: white;
-  font-family: DM sans;
-  padding: 0px;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0px !important;
-}
-
-.nav-item .nav-link:hover {
-  color: #917a50;
-}
-
-.nav-item {
-  margin: 0 15px;
-}
-.nav-item a {
-  color: white;
-  font-family: DM Sans;
-  font-size: 18px;
-  justify-content: center;
-}
-
-.nav-item a:hover {
-  color: gray;
-}
-*/
-
-------
-
-
 .containerPrincipal {
   display: flex;
   flex-wrap: wrap;
   background-color: black;
   justify-content: space-between;
+
 }
 
 .containerPrincipal__bannerPrincipal {
@@ -194,6 +139,9 @@
   grid-area: filmes;
   width: 1229px;
   height: 402px;
+  /*left: 120px;
+  top: 1275px;
+  position: absolute;*/
   position: relative;
   background: rgba(217, 217, 217, 0.08);
 }
@@ -237,6 +185,9 @@
 .categoriaLivros {
   width: 1229px;
   height: 402px;
+  /*left: 120px;
+  top: 1710px;
+  position: absolute;*/
   position: relative;
   background: rgba(217, 217, 217, 0.08);
   grid-area: livros;
@@ -282,6 +233,9 @@
   grid-area: personagens;
   width: 1229px;
   height: 402px;
+  /*left: 120px;
+  top: 2145px;
+  position: absolute;*/
   position: relative;
   background: rgba(217, 217, 217, 0.08);
 }
@@ -708,7 +662,6 @@
   margin-top: 30px;
   margin-bottom: 20px;
 }
-
 .navBarFooter__copyright p {
   color: white;
   font-size: 14px;
@@ -718,4 +671,3 @@
   font-family: DM Sans;
   padding-top: 10px;
 }
-
