@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+
+.body {
+  background-color: black;
+  color: white;
+  font-family: DM Sans;
+}
+
+/* Sessão do MENU */
+
+.navbar-brand {
+  height: 70px;
+  padding: 20px 50px;
+}
+
+.navbar-nav {
+  gap: 30px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0px !important;
+}
+
+.navbar-nav li:first-child {
+  border-bottom: 2px white solid;
+}
+
+.nav-item .nav-link:hover {
+  color: #917a50;
+}
+
+.nav-item a {
+  color: white;
+  font-family: DM Sans;
+  font-size: 18px;
+  justify-content: center;
+}
+
+.menu {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  padding: 5px;
+  list-style: none;
+  margin: 5px;
+  color: white;
+  font-family: DM Sans;
+}
+
+/* Fim da Sessão do MENU */
+
+/*Banner Principal*/
+
+.bannerPrincipal{
+  width: 100%;
+}
+
+/* Sessão do Footer */
+
+.footer {
+  width: auto;
+  position: relative;
+  display: block;
+  font-size: 18px;
+}
+
+.footer__logo {
+  width: 149px;
+  height: 49px;
+  left: 96px;
+  top: 40px;
+  position: relative;
+}
+
+.footer__nav {
+  font-size: 18px;
+  font-family: DM Sans;
+  font-weight: 500;
+  line-height: 22.5px;
+  padding-top: 36px;
+  padding-bottom: 8px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  list-style: none;
+  display: flex;
+}
+
+.footer__nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__nav li a:hover {
+  color: #917a50;
+}
+
+.copyright {
+  background: black;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer .copyright p {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: center;
+  font-family: DM Sans;
+  padding-top: 10px;
+}
+
+.footer__linha {
+  height: 2px;
+  justify-items: center;
+  background: white;
+  opacity: unset;
+  margin: 1px 5%;
+}
+
+/* Fim da Sessão do Footer */
