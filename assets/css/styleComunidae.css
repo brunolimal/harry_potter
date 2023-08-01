@@ -21,7 +21,7 @@
   padding: 0px !important;
 }
 
-.navbar-nav li:first-child {
+.navbar-nav li:nth-child(8) {
   border-bottom: 2px white solid;
 }
 
@@ -49,6 +49,12 @@
 }
 
 /* Fim da Sessão do MENU */
+
+/*Banner Principal*/
+
+.bannerPrincipal{
+  width: 100%;
+}
 
 /* Sessão do Footer */
 
