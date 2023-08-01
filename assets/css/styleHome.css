@@ -510,7 +510,7 @@
 }
 
 /* --Sessão das Subcategorias Comunidades, Loja e Restaurantes */
-
+/*
 .subCategorias {
   display: grid;
   width: 600px;
@@ -523,12 +523,28 @@
   top: 3285px;
   position: absolute;
 }
+
 .subCategorias div{
   display: grid;
   grid-template-areas:
     "restaurantes lojas comunidade";
   grid-template-columns: auto;
   justify-content: center;
+}
+*/
+
+.subCategorias{
+  display: flex;
+  justify-content: space-evenly;
+  /*width: 600px;*/
+  height: 460px;
+  color: white;
+  font-size: 25px;
+  font-family: Wizard World;
+  letter-spacing: 3px;
+  top: -350px;
+  flex-direction: row;
+  position: relative;
 }
 
 .subCategorias a{
@@ -539,10 +555,10 @@
 .subCategorias__comunidade {
   width: 349px;
   height: 446px;
-  left: 748px;
+  /*left: 748px;*/
   top: 0px;
-  position: absolute;
-  grid-area: comunidade;
+  position: relative;
+  /*grid-area: comunidade;*/
 }
 
 .subCategorias__comunidade-title {
@@ -563,10 +579,10 @@
 .subCategorias__lojas {
   width: 349px;
   height: 446px;
-  left: 374px;
+  /*left: 374px;*/
   top: 0px;
-  position: absolute;
-  grid-area: lojas;
+  position: relative;
+  /*grid-area: lojas;*/
 }
 
 .subCategorias__lojas--title {
@@ -589,7 +605,7 @@
   height: 446px;
   left: 0px;
   top: 0px;
-  position: absolute;
+  position: relative;
   grid-area: restaurantes;
 }
 
@@ -609,9 +625,9 @@
 }
 
 .navBarFooter {
-  width: 1350px;
-  left: 7%;
-  top: 160px;
+  /*width: 1350px;
+  left: 7%;*/
+  top: -300px;
   position: relative;
   background-color: black;
 }

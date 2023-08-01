@@ -150,91 +150,10 @@
     left: 10px;
     top: 230px;
   }
-
- 
-
   .boxCasas__img,
   .subCategorias,
   .navBarFooter__nav{
     display: none;
-  }
-
-  .casasHogwarts{
-  }
-
-}
-
-@media screen and (min-width: 1600px) {
-  .container-fluid{
-    justify-content: center !important;
-  }
-
-  .containerPrincipal {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-    justify-content: space-around;
-  
-  }
-
-  .containerPrincipal__bannerPrincipal{
-    width: 100%;
-  }
-
-  .containerPrincipal__arabescoDireito {
-    left: 0px;
-  }
-
-  .containerPrincipal__h1 {
-    justify-content: center;
-    top: 120%;
-    display: flex;
-    padding-left: 60px;
-  }
-
-  .containerPrincipal__logoCentral{
-    top: 1200px;
-    display: flex;
-    padding-left: 60px;
-  }
-
-  .casasHogwarts{
-    display: flex;
-    padding-left:8%;
-  }
-  
-  /* box com grid*/
-  .boxCasas {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .boxCasas__img{
-    justify-content: center;
-  }
-
-  .boxCasas-imgbox{
-    width: 100%;
-  }
-
-  .subCategorias{
-    display: grid;
-    position: absolute;
-    left: 7%;
-    top:3410px;
-    justify-content: center;
-  }
-
-  }
-  .subCategorias__comunidade,
-  .subCategorias__lojas,
-  .subCategorias__restaurantes {
-    display: flex;
-    position: relative;
-    top: 20px;
-    justify-content: center;
   }
 
 }
