@@ -685,3 +685,43 @@
   font-family: DM Sans;
   padding-top: 10px;
 }
+
+/* -- Menu Social --*/
+
+.social-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+*, ::after, ::before {
+  box-sizing: content-box !important;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-github,
+.fa-instagram {
+  background: #1E293B;
+  color: white;
+}
