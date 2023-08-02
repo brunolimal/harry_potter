@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
 
 .body {
   background-color: black;
-
 }
 
 /* Sessão do MENU */
 
-.navbar-brand{
+.navbar-brand {
   height: 70px;
   padding: 20px 50px;
 }
 
-.navbar-nav{
+.navbar-nav {
   gap: 30px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
+.navbar-expand-lg .navbar-nav .nav-link {
   padding: 0px !important;
 }
 
@@ -35,9 +34,9 @@
   justify-content: center;
 }
 
-.menu{
+.menu {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   font-size: 18px;
   padding: 5px;
   list-style: none;
@@ -50,7 +49,6 @@
   flex-wrap: wrap;
   background-color: black;
   justify-content: space-between;
-
 }
 
 .containerPrincipal__bannerPrincipal {
@@ -72,10 +70,16 @@
   position: relative;
 }
 
-.containerPrincipal__h1 {
-  left: 330px;
-  top: 990px;
-  position: absolute;
+.logoCentral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  top: -176px;
+  position: relative;
+}
+
+.logoCentral__h1 {
   color: white;
   font-size: 40px;
   font-family: Wizard World;
@@ -83,19 +87,16 @@
   line-height: 50px;
 }
 
-.containerPrincipal__logoCentral {
+.logoCentral__img {
   width: 488px;
   height: 161px;
-  left: 476px;
-  top: 1060px;
-  position: absolute;
   animation-duration: 5s;
   animation-name: aparecer;
   animation-iteration-count: infinite;
   transition: all 3s;
 }
 
-.containerPrincipal__logoCentral:hover {
+.logoCentral__img:hover {
   height: 180px;
   width: 600px;
   justify-content: center;
@@ -130,7 +131,6 @@
 
 .categorias a:hover {
   color: #917a50;
-
 }
 
 /* Filmes */
@@ -296,12 +296,12 @@
   gap: 10px;
 }
 
-.boxCasas>div {
+.boxCasas > div {
   width: 40%;
   height: 275px;
 }
 
-.boxCasas-imgbox{
+.boxCasas-imgbox {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -367,7 +367,7 @@
 }
 
 .sonserina__title {
-  right:22px;
+  right: 22px;
   top: 20px;
   position: relative;
   text-align: right;
@@ -447,7 +447,6 @@
   line-height: 25px;
   word-wrap: break-word;
   line-height: 22px;
-
 }
 
 .corvinal__membros {
@@ -496,7 +495,6 @@
   font-weight: 400;
   word-wrap: break-word;
   line-height: 22px;
-
 }
 
 .lufalufa__membros {
@@ -534,7 +532,7 @@
 }
 */
 
-.subCategorias{
+.subCategorias {
   display: flex;
   justify-content: space-evenly;
   /*width: 600px;*/
@@ -548,9 +546,9 @@
   position: relative;
 }
 
-.subCategorias a{
-    text-decoration: none;
-    color: white;
+.subCategorias a {
+  text-decoration: none;
+  color: white;
 }
 
 .subCategorias__comunidade {
@@ -640,7 +638,6 @@
   top: 0px;
   position: absolute;
 }
-
 
 .navBarFooter__nav {
   font-size: 16px;

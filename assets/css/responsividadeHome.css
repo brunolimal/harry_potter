@@ -8,40 +8,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  /*.nav-bar {
-    padding: 1.5rem 4rem;
-  }
-
-  .nav-item {
-    display: none;
-  }
-
-  .mobile-menu-icon {
-    display: block;
-  }
-
-  .mobile-menu-icon button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  .mobile-menu ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 1rem;
-  }
-
-  .mobile-menu .nav-item {
-    display: block;
-    padding-top: 1.2rem;
-  }
-
-  .open {
-    display: block;
-  }*/
-
   .navbar-logo {
     height: 100px;
   }
@@ -58,22 +24,20 @@
     position: relative;
   }
 
-  .containerPrincipal__h1 {
-    left: 15%;
-    top: 400px;
-    position: absolute;
+  .logoCentral {
+    top: -50px;
+  }
+
+  .logoCentral__h1 {
     color: white;
     font-size: 15px;
     font-family: Wizard World;
     line-height: 50px;
   }
 
-  .containerPrincipal__logoCentral {
+  .logoCentral__img {
     width: 200px;
     height: 90px;
-    left: 25%;
-    top: 450px;
-    position: absolute;
   }
 
   .categorias {
