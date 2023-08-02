@@ -1,0 +1,180 @@
+
+/*pagina */
+
+.content {
+    background-color: black;
+    padding: 84px;
+    font-family: 'Wizard World';
+  }
+
+
+.titulo__personagens {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    color: white;
+    }
+
+.navbar-brand {
+    height: 70px;
+    padding: 20px 50px;
+  }
+    
+.navbar-nav {
+    gap: 30px;
+  }
+    
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0px !important;
+  }
+    
+  .navbar-nav li:nth-child(2) {
+    border-bottom: 2px white solid;
+  }
+    
+.nav-item .nav-link:hover {
+    color: #917a50;
+  }
+    
+  .nav-item a {
+    color: white;
+    font-family:   'Wizard World';
+    font-size: 18px;
+    justify-content: center;
+  }
+    
+  .menu {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    padding: 5px;
+    gap: 40px;
+    list-style: none;
+    color: white;
+    font-family: 'Wizard World';
+  }
+
+.card-personagem {
+  padding: 20px;
+  margin: 50px;
+  text-align: center;
+  border: 100px;
+  background-color: rgb(82, 88, 95);
+  color: white;
+}
+
+.card-personagem .card__info {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+
+.card-personagem .card__descrição {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 40px;
+    align-items: center;
+
+  }
+
+  .card-personagem .card__image {
+    border-radius: 100%;
+    min-width: 321px;
+    width: 321px;
+    height: 337px;
+    object-fit: cover;
+  }
+
+  .card__image.card__image--right {
+    margin-right: -90px;
+  }
+
+  .card__image.card__image--left {
+    margin-left: -90px;
+  }
+
+  
+  .personagens {
+  align-content: center;
+  gap: 50px;
+}
+
+
+/* sessao footer */
+
+.menu__footer {
+  width: auto;
+  position: relative;
+  display: block;
+  font-size: 18px;
+  background-color: black;
+}
+
+.footer__logo {
+  width: 149px;
+  height: 49px;
+  left: 96px;
+  top: 40px;
+  position: relative;
+}
+
+.lista__footer {
+  width: auto;
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-family: 'Wizard World';
+  font-weight: 500;
+  line-height: 22.5px;
+  padding-top: 36px;
+  padding-bottom: 8px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  list-style: none;
+  display: flex;
+}
+
+.lista__footer li a {
+  text-decoration: none;
+  color: white;
+}
+
+.lista__footer li a:hover {
+  color: #917a50;
+}
+
+.lista__footer li:nth-child(2) {
+  border-bottom: 2px white solid;
+}
+
+.copyright {
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.menu__footer .copyright p {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: center;
+  font-family: 'Wizard World';
+  padding-top: 10px;
+}
+
+.footer__linha {
+  height: 2px;
+  justify-items: center;
+  background: white;
+  opacity: unset;
+  margin: 1px 5%;
+}

@@ -2,32 +2,32 @@
 
 .body {
   background-color: black;
-  display: flex;
-  flex-wrap: wrap;
+
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
+/* Sessão do MENU */
 
-header {
-  background-color: black;
-}
-
-.nav-bar {
-  display: flex;
-  /*justify-content: center;*/
-}
-
-.nav-logo {
+.navbar-brand{
   height: 70px;
   padding: 20px 50px;
 }
 
-.nav-item {
-  margin: 0 15px;
+.navbar-nav{
+  gap: 30px;
 }
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding: 0px !important;
+}
+
+.navbar-nav li:first-child {
+  border-bottom: 2px white solid;
+}
+
+.nav-item .nav-link:hover {
+  color: #917a50;
+}
+
 .nav-item a {
   color: white;
   font-family: DM Sans;
@@ -35,86 +35,33 @@ header {
   justify-content: center;
 }
 
-.nav-item a:hover {
-  color: #917a50;
-}
-
-
-.nav-list {
+.menu{
   display: flex;
-  align-items: center;
-}
-
-.nav-list li:first-child {
-  border-bottom: 2px white solid;
-}
-
-.nav-list ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding-left: 40px;
-}
-
-/* -- Header antigo
-.header {
-  width: 1440px;
-  left: 49px;
-  top: 31px;
-  background-color: black;
-  display: flex;
-}
-
-.header__logo {
-  width: 270px;
-  height: 115px;
-  padding: 30px 10px 20px 50px;
-}
-
-*/
-
-/*
-header nav {
-  display: flex;
-}
-
-
-.header__nav-list {
-  list-style: none;
-  gap: 50px;
-  display: flex;
-  font-family: DM Sans;
+  justify-content:space-evenly;
   font-size: 18px;
-  color: white;
-  justify-content: center;
-  line-height: 30px;
-  padding-top: 45px;
-}
-
-.header__nav-list a {
-  text-decoration: none;
+  padding: 5px;
+  list-style: none;
+  margin: 5px;
   color: white;
 }
-
-.header__nav-list li:first-child {
-  border-bottom: 2px white solid;
-}
---------- */
 
 .containerPrincipal {
   display: flex;
   flex-wrap: wrap;
   background-color: black;
+  justify-content: space-between;
+
 }
 
 .containerPrincipal__bannerPrincipal {
-  /*position: absolute;*/
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .containerPrincipal__arabescoDireito {
   width: 460px;
   height: 433px;
-  left: 518px;
   position: relative;
 }
 
@@ -127,7 +74,7 @@ header nav {
 
 .containerPrincipal__h1 {
   left: 330px;
-  top: 950px;
+  top: 990px;
   position: absolute;
   color: white;
   font-size: 40px;
@@ -169,10 +116,16 @@ header nav {
 
 .categorias {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding-left: 100px;
+  /*padding-left: 100px;*/
+  justify-content: center;
   gap: 20px;
+}
+
+.categorias a {
+  text-decoration: none;
+  color: white;
 }
 
 .categorias a:hover {
@@ -183,6 +136,7 @@ header nav {
 /* Filmes */
 
 .categoriaFilmes {
+  grid-area: filmes;
   width: 1229px;
   height: 402px;
   /*left: 120px;
@@ -236,6 +190,7 @@ header nav {
   position: absolute;*/
   position: relative;
   background: rgba(217, 217, 217, 0.08);
+  grid-area: livros;
 }
 
 .categoriaLivros__img {
@@ -275,6 +230,7 @@ header nav {
 /* Personagens */
 
 .categoriaPersonagens {
+  grid-area: personagens;
   width: 1229px;
   height: 402px;
   /*left: 120px;
@@ -321,30 +277,14 @@ header nav {
 /* --Sessão das Casas de Hogwarts */
 
 .casasHogwarts {
+  display: flex;
   color: white;
   font-family: Wizard World;
   font-size: 35px;
   font-weight: 400;
   line-height: 43px;
-  padding-left: 40%;
+  padding: 30px 0px 20px 40%;
 }
-
-h2{
-  text-align: center;
-  display: flex;
-}
-/* box com grid
-.boxCasas {
-  display: grid;
-  grid-template-columns: 594px 594px;
-  grid-template-rows: repeat(2, 275px);
-  text-align: center;
-  justify-content: center;
-  gap: 10px;
-  grid-template-areas:
-    "grifinoria sonserina "
-    "lufalufa corvinal";
-}*/
 
 /* box com display flex */
 
@@ -360,24 +300,18 @@ h2{
   height: 275px;
 }
 
+.boxCasas-imgbox{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .boxCasas__img {
   position: relative;
   width: 599px;
   height: 417px;
   top: -486px;
-  left: 29%;
 }
-
-/*
-.boxCasas {
-  width: 1440px;
-  height: 600px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-}*/
 
 .grifinoria {
   grid-area: grifinoria;
@@ -388,7 +322,7 @@ h2{
 
 .grifinoria__title {
   left: 22px;
-  top: 0px;
+  top: 20px;
   position: absolute;
   color: white;
   font-size: 35px;
@@ -404,7 +338,7 @@ h2{
 .grifinoria__descritivo {
   width: 478px;
   left: 22px;
-  top: 65px;
+  top: 75px;
   position: absolute;
   color: white;
   font-size: 20px;
@@ -433,7 +367,7 @@ h2{
 
 .sonserina__title {
   left: 400px;
-  top: 0px;
+  top: 20px;
   position: absolute;
   text-align: right;
   color: white;
@@ -451,7 +385,7 @@ h2{
 .sonserina__descritivo {
   width: 443px;
   left: 130px;
-  top: 65px;
+  top: 75px;
   position: absolute;
   text-align: right;
   color: white;
@@ -484,7 +418,7 @@ h2{
 
 .corvinal__title {
   left: 400px;
-  top: 0px;
+  top: 20px;
   position: absolute;
   text-align: right;
   color: white;
@@ -502,7 +436,7 @@ h2{
 .corvinal__descritivo {
   width: 379px;
   left: 190px;
-  top: 65px;
+  top: 75px;
   position: absolute;
   text-align: right;
   color: white;
@@ -537,7 +471,7 @@ h2{
 
 .lufalufa__title {
   left: 22px;
-  top: 0px;
+  top: 20px;
   position: absolute;
   color: white;
   font-size: 35px;
@@ -553,7 +487,7 @@ h2{
 .lufalufa__descritivo {
   width: 462px;
   left: 22px;
-  top: 65px;
+  top: 75px;
   position: absolute;
   color: white;
   font-size: 20px;
@@ -564,7 +498,7 @@ h2{
 
 }
 
-.lufalufa__principaisMembros {
+.lufalufa__membros {
   width: 478px;
   left: 22px;
   top: 200px;
@@ -576,28 +510,55 @@ h2{
 }
 
 /* --Sessão das Subcategorias Comunidades, Loja e Restaurantes */
-
+/*
 .subCategorias {
+  display: grid;
+  width: 600px;
+  justify-content: space-around;
+  height: 460px;
   color: white;
   font-size: 25px;
   font-family: Wizard World;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height: 27px;
   letter-spacing: 3px;
-  /*width: 1098px; 
-    height: 446px;*/
-  left: 159px;
-  top: 3340px;
+  top: 3285px;
   position: absolute;
+}
+
+.subCategorias div{
+  display: grid;
+  grid-template-areas:
+    "restaurantes lojas comunidade";
+  grid-template-columns: auto;
+  justify-content: center;
+}
+*/
+
+.subCategorias{
+  display: flex;
+  justify-content: space-evenly;
+  /*width: 600px;*/
+  height: 460px;
+  color: white;
+  font-size: 25px;
+  font-family: Wizard World;
+  letter-spacing: 3px;
+  top: -350px;
+  flex-direction: row;
+  position: relative;
+}
+
+.subCategorias a{
+    text-decoration: none;
+    color: white;
 }
 
 .subCategorias__comunidade {
   width: 349px;
   height: 446px;
-  left: 748px;
+  /*left: 748px;*/
   top: 0px;
-  position: absolute;
+  position: relative;
+  /*grid-area: comunidade;*/
 }
 
 .subCategorias__comunidade-title {
@@ -618,9 +579,10 @@ h2{
 .subCategorias__lojas {
   width: 349px;
   height: 446px;
-  left: 374px;
+  /*left: 374px;*/
   top: 0px;
-  position: absolute;
+  position: relative;
+  /*grid-area: lojas;*/
 }
 
 .subCategorias__lojas--title {
@@ -643,7 +605,8 @@ h2{
   height: 446px;
   left: 0px;
   top: 0px;
-  position: absolute;
+  position: relative;
+  grid-area: restaurantes;
 }
 
 .subCategorias__restaurantes--title {
@@ -662,10 +625,10 @@ h2{
 }
 
 .navBarFooter {
-  width: 1440px;
-  left: 0px;
-  top: 3827px;
-  position: absolute;
+  /*width: 1350px;
+  left: 7%;*/
+  top: -300px;
+  position: relative;
   background-color: black;
 }
 
@@ -676,6 +639,7 @@ h2{
   top: 0px;
   position: absolute;
 }
+
 
 .navBarFooter__nav {
   font-size: 16px;
@@ -700,11 +664,13 @@ h2{
   color: #917a50;
 }
 
-hr {
+.hr {
   justify-content: center;
-  width: 80%;
   margin-top: 20px;
   background: white;
+  height: 2px;
+  opacity: unset;
+  margin: 1px 10%;
 }
 
 .navBarFooter__copyright {
@@ -712,7 +678,6 @@ hr {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-
 .navBarFooter__copyright p {
   color: white;
   font-size: 14px;
@@ -720,5 +685,5 @@ hr {
   line-height: 19px;
   text-align: center;
   font-family: DM Sans;
+  padding-top: 10px;
 }
-

@@ -1,217 +1,159 @@
-/*.nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: #fff;
-    font-weight: 400;
-}*/
-
 
 .mobile-menu-icon {
-    display: none;
+  display: none;
 }
 
 .mobile-menu {
-    display: none;
+  display: none;
 }
 
-@media screen and (max-width: 730px) {
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
+@media screen and (max-width: 768px) {
+  /*.nav-bar {
+    padding: 1.5rem 4rem;
+  }
 
-    .nav-item {
-        display: none;
-    }
+  .nav-item {
+    display: none;
+  }
 
-    .mobile-menu-icon {
-        display: block;
-    }
+  .mobile-menu-icon {
+    display: block;
+  }
 
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
 
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
 
-    .open {
-        display: block;
-    }
+  .open {
+    display: block;
+  }*/
 
-    .nav-logo {
-        height:45px;
-    }
+  .navbar-logo {
+    height: 100px;
+  }
 
-    .containerPrincipal__bannerPrincipal {
-        width: 100%;
-    }
+  .containerPrincipal__bannerPrincipal {
+    width: 100%;
+  }
+  
+  .containerPrincipal__arabescoDireito,
+  .containerPrincipal__arabescoEsquerdo {
+    width: 120px;
+    height: 100px;
+    left: 0px;
+    position: relative;
+  }
 
-    .containerPrincipal__arabescoDireito {
-        width: 120px;
-        height: 100px;
-        left: 160px;
-        position: relative;
-      }
-      
-      .containerPrincipal__arabescoEsquerdo {
-        width: 120px;
-        height: 100px;
-        left: 0px;
-        position: relative;
-      }
+  .containerPrincipal__h1 {
+    left: 15%;
+    top: 400px;
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-family: Wizard World;
+    line-height: 50px;
+  }
 
-      .containerPrincipal__h1 {
-        left: 15%;
-        top: 400px;
-        position: absolute;
-        color: white;
-        font-size: 15px;
-        font-family: Wizard World;
-        line-height: 50px;
-      }
-      
-      .containerPrincipal__logoCentral {
-        width: 200px;
-        height: 90px;
-        left: 25%;
-        top: 450px;
-        position: absolute;
-      }
+  .containerPrincipal__logoCentral {
+    width: 200px;
+    height: 90px;
+    left: 25%;
+    top: 450px;
+    position: absolute;
+  }
 
-      .categorias {
-        display: flex;
-        flex-direction: column;
-        padding-left: 20px;
-      }
+  .categorias {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
 
-      .categoriaFilmes {
-        width: 350px;
-        height: 402px;
-        position: relative;
-        top: 120px;
-    }
+    /* Filmes */
 
-    .categoriaFilmes__title {
-        left: 15px;
-        position: absolute;
-        color: white;
-        font-size: 40px;
-        font-family: Wizard World;
-        font-weight: 400;
-        line-height: 50px;
-        word-wrap: break-word;
-        margin-top: 0px;
-        margin-bottom: 10px;
-      }
-      
-      .categoriaFilmes__descritivo {
-        color: white;
-        font-size: 20px;
-        font-family: DM Sans;
-        line-height: 20px;
-        word-wrap: break-word;
-        width: 320px;
-        left: 15px;
-        top: 110px;
-        position: absolute;
-        text-align: justify;
-        margin-top: 0px;
-      }
+  .categoriaFilmes,
+  .categoriaLivros,
+  .categoriaPersonagens {
+    width: 410px;
+    height: 402px;
+    top: 120px;
+  }
 
-      .categoriaFilmes__img {
-        display: none;
-      }
-      
-      /* Livros */
-      
-      .categoriaLivros {
-        width: 350px;
-        height: 402px;
-        top: 130px;
-        position: relative;
-        background: rgba(217, 217, 217, 0.08);
-        margin-top: 0px;
-        margin-bottom: 10px;
-      }
-      
-      .categoriaLivros__img {
-        display: none;
-      }
-      
-      .categoriaLivros__title {
-        left: 15px;
-        top: 20px;
-        position: absolute;
-        color: white;
-        font-size: 40px;
-        font-family: Wizard World;
-        font-weight: 400;
-        line-height: 50px;
-        word-wrap: break-word;
-      }
-      
-      .categoriaLivros__descritivo {
-        color: white;
-        font-size: 20px;
-        font-family: DM Sans;
-        font-weight: 400;
-        line-height: 25px;
-        word-wrap: break-word;
-        width: 640px;
-        left: 15px;
-        top: 110px;
-        position: absolute;
-        text-align: justify;
-      }
+  .categoriaFilmes__title,
+  .categoriaLivros__title,
+  .categoriaLivros__title,
+  .categoriaPersonagens__title {
+    left: 10px;
+    margin-bottom: 0px;
+  }
 
-      .categoriaPersonagens {
-        width: 350px;
-        height: 402px;
-        top: 140px;
-        position: relative;
-        background: rgba(217, 217, 217, 0.08);
-      }
-      
-      .categoriaPersonagens__img {
-        display: none;
-      }
-      
-      
-      .categoriaPersonagens__title {
-        left: 15px;
-        top: 50px;
-        position: absolute;
-        color: white;
-        font-size: 40px;
-        font-family: Wizard World;
-        font-weight: 400;
-        line-height: 50px;
-        word-wrap: break-word;
-      }
-      
-      .categoriaPersonagens__descritivo {
-        width: 640px;
-        left: 55px;
-        top: 132px;
-        position: absolute;
-        color: white;
-        font-size: 20px;
-        font-family: DM Sans;
-        font-weight: 400;
-        line-height: 25px;
-        word-wrap: break-word;
-        text-align: justify;
-      }
+  .categoriaFilmes__descritivo,
+  .categoriaPersonagens__descritivo,
+  .categoriaLivros__descritivo {
+    width: 380px;
+    left: 15px;
+    top: 100px;
+  }
+
+  .categoriaFilmes__img,
+  .categoriaLivros__img,
+  .categoriaPersonagens__img{
+    display: none;
+  }
+
+  .boxCasas{
+    padding-top: 30px;
+  }
+  .boxCasas>div {
+    width: 400px;
+    height: 300px;
+  }
+
+  .grifinoria__descritivo,
+  .sonserina__descritivo,
+  .corvinal__descritivo,
+  .lufalufa__descritivo {
+    width: 340px;
+    left: 10px;
+    top: 75px;
+    text-align: justify;
+  }
+
+  .grifinoria__title,
+  .sonserina__title,
+  .lufalufa__titl,
+  .corvinal__title {
+    left: 10px;
+    top: 20px;
+    position: absolute;
+    text-align: left;
+  }
+
+  .grifinoria__membros,
+  .sonserina__membros,
+  .lufa-lufa__membros,
+  .corvinal__membros {
+    width: 340px;
+    left: 10px;
+    top: 230px;
+  }
+  .boxCasas__img,
+  .subCategorias,
+  .navBarFooter__nav{
+    display: none;
+  }
 
 }
