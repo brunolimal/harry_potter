@@ -1,127 +1,140 @@
 #black-background {
-  background-color: black;
+background-color: black;
 }
 
 body {
-  overflow-x: hidden;
-  }
-  
-  .navbar-brand{
-    height: 70px;
-    padding: 90px;
-    margin-top: 10px;
-  }
-  
-  .navbar-nav{
-    gap: 60px;
-  }
-  
-  .navbar-expand-lg .navbar-nav .nav-link{
-    padding: 0px !important;
-  }
-  
-  .navbar-nav li:first-child {
-    border-bottom: 2px white solid;
-  }
-  
-  .nav-item .nav-link:hover {
-    color: #917a50;
-  }
-  
-  .nav-item a {
-    color: white;
-    font-size: 20px;
-    justify-content: center;
-  }
-  
-  .imagem__principal {
-  position: relative;
-  margin-top: 30px;
-  overflow: hidden;
-  }
-  
-  .pagina__titulo {
-  color: white;
-  text-align: center;
-  font-size: 25px;
-  margin-top: 60px;
-  margin-bottom: -20px;
-  }
-  
-  .imagem__direita {
-  position: relative;
-  margin-top: -380px;
-  transform: translateX(1150px);
-  width: 230px;
-  height: 310px;
-  }
-  
-  .titulo__direita {
-  color: white;
-  position: relative;
-  right: -250px;
-  top: 30px;
-  font-size: 25px;
-  }
-  
-  .texto__direita {
-  color: white;
-  position: relative;
-  padding-left: 100px;
-  padding-top: 50px;
-  font-size: 20px;
-  max-width: 1100px;
-  text-align: justify;
-  }
-  
-  .imagem__esquerda {
-  position: relative;
-  top: 40px;
-  transform: translateX(95px);
-  width: 230px;
-  height: 310px;
-  }
-  
-  .titulo__esquerda {
-  color: white;
-  position: relative;
-  right: -550px;
-  top: 30px;
-  font-size: 25px;
-  }
-  
-  .texto__esquerda {
-  color: white;
-  position: absolute;
-  left: 380px;
-  padding-right: 10px;
-  padding-top: 50px;
-  font-size: 20px;
-  max-width: 1000px;
-  text-align: justify;
-  }
-    
-  .hr {
-    justify-content: center;
-    margin-top: 20px;
-    background: white;
-    height: 2px;
-    opacity: unset;
-    margin: 1px 04%;
-  }
-  
-  .navBarFooter__copyright {
-    background: black;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .navBarFooter__copyright p {
-    color: white;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 19px;
-    text-align: center;
-    font-family: DM Sans;
-    padding-top: 10px;
-  }
-  
+overflow-x: hidden;
+}
+
+.navbar-brand{
+height: 70px;
+padding: 90px;
+margin-top: 10px;
+}
+
+.navbar-nav{
+gap: 60px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+padding: 0px !important;
+}
+
+.nav-item .nav-link:hover {
+color: #917a50;
+}
+
+.nav-item a {
+color: white;
+font-size: 20px;
+justify-content: center;
+}
+
+.imagem__principal {
+position: relative;
+margin-top: 30px;
+overflow: hidden;
+}
+
+.pagina__titulo {
+color: white;
+text-align: center;
+font-size: 25px;
+margin-top: 60px;
+margin-bottom: -20px;
+}
+
+.imagem__direita {
+position: relative;
+margin-top: -380px;
+transform: translateX(1150px);
+width: 230px;
+height: 310px;
+}
+
+.titulo__direita {
+color: white;
+position: relative;
+right: -250px;
+top: 50px;
+font-size: 25px;
+}
+
+.texto__direita {
+color: white;
+position: relative;
+padding-left: 80px;
+padding-top: 80px;
+font-size: 20px;
+max-width: 1100px;
+text-align: justify;
+}
+
+.imagem__esquerda {
+position: relative;
+top: 10px;
+transform: translateX(-155px);
+width: 230px;
+height: 310px;
+}
+
+.titulo__esquerda {
+color: white;
+position: relative;
+right: -300px;
+top: 50px;
+font-size: 25px;
+}
+
+.texto__esquerda {
+color: white;
+position: absolute;
+left: 150px;
+padding-right: 10px;
+padding-top: 80px;
+font-size: 20px;
+max-width: 1000px;
+text-align: justify;
+}
+
+.hr {
+justify-content: center;
+margin-top: 20px;
+background: white;
+height: 2px;
+opacity: unset;
+margin: 1px -10%;
+}
+
+.navBarFooter__copyright {
+background: black;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.navBarFooter__copyright p {
+color: white;
+font-size: 14px;
+font-weight: 300;
+line-height: 19px;
+text-align: center;
+padding-top: 10px;
+}
+
+.filmeDireita {
+grid-area: filmes;
+width: 1229px;
+height: 402px;
+position: relative;
+background: rgba(217, 217, 217, 0.08);
+margin-left: 60px;
+}
+
+.filmeEsquerda {
+grid-area: filmes;
+width: 1230px;
+height: 402px;
+position: relative;
+background: rgba(217, 217, 217, 0.08);
+margin-left: 210px;
+margin-top: 40px;
+}
