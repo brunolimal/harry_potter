@@ -278,12 +278,13 @@
 
 .casasHogwarts {
   display: flex;
+  justify-content: space-around;
   color: white;
   font-family: Wizard World;
   font-size: 35px;
   font-weight: 400;
   line-height: 43px;
-  padding: 30px 0px 20px 40%;
+  padding: 30px 0px 20px 0px;
 }
 
 /* box com display flex */
@@ -296,7 +297,7 @@
 }
 
 .boxCasas>div {
-  width: 594px;
+  width: 40%;
   height: 275px;
 }
 
@@ -308,9 +309,9 @@
 
 .boxCasas__img {
   position: relative;
-  width: 599px;
-  height: 417px;
-  top: -486px;
+  width: 590px;
+  height: 410px;
+  top: -489px;
 }
 
 .grifinoria {
@@ -336,7 +337,7 @@
 }
 
 .grifinoria__descritivo {
-  width: 478px;
+  width: 70%;
   left: 22px;
   top: 75px;
   position: absolute;
@@ -366,9 +367,9 @@
 }
 
 .sonserina__title {
-  left: 400px;
+  right:22px;
   top: 20px;
-  position: absolute;
+  position: relative;
   text-align: right;
   color: white;
   font-size: 35px;
@@ -383,8 +384,8 @@
 }
 
 .sonserina__descritivo {
-  width: 443px;
-  left: 130px;
+  width: 67%;
+  right: 22px;
   top: 75px;
   position: absolute;
   text-align: right;
@@ -398,7 +399,7 @@
 
 .sonserina__membros {
   width: 478px;
-  left: 95px;
+  right: 22px;
   top: 200px;
   position: absolute;
   text-align: right;
@@ -417,9 +418,9 @@
 }
 
 .corvinal__title {
-  left: 400px;
+  right: 22px;
   top: 20px;
-  position: absolute;
+  position: relative;
   text-align: right;
   color: white;
   font-size: 35px;
@@ -434,8 +435,8 @@
 }
 
 .corvinal__descritivo {
-  width: 379px;
-  left: 190px;
+  width: 69%;
+  right: 22px;
   top: 75px;
   position: absolute;
   text-align: right;
@@ -451,7 +452,7 @@
 
 .corvinal__membros {
   width: 478px;
-  left: 90px;
+  right: 22px;
   top: 200px;
   text-align: right;
   color: white;
@@ -485,7 +486,7 @@
 }
 
 .lufalufa__descritivo {
-  width: 462px;
+  width: 63%;
   left: 22px;
   top: 75px;
   position: absolute;
