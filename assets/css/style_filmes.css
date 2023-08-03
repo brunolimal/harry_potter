@@ -6,17 +6,16 @@ body {
 overflow-x: hidden;
 }
 
-.navbar-brand{
+.navbar-brand {
 height: 70px;
-padding: 90px;
-margin-top: 10px;
+padding: 20px 50px;
 }
 
-.navbar-nav{
-gap: 60px;
+.navbar-nav {
+gap: 30px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
+.navbar-expand-lg .navbar-nav .nav-link {
 padding: 0px !important;
 }
 
@@ -26,13 +25,23 @@ color: #917a50;
 
 .nav-item a {
 color: white;
-font-size: 20px;
+font-family: DM Sans;
+font-size: 18px;
 justify-content: center;
+}
+
+.menu {
+display: flex;
+justify-content: space-evenly;
+font-size: 18px;
+padding: 5px;
+list-style: none;
+margin: 5px;
+color: white;
 }
 
 .imagem__principal {
 position: relative;
-margin-top: 30px;
 overflow: hidden;
 }
 
@@ -42,6 +51,7 @@ text-align: center;
 font-size: 25px;
 margin-top: 60px;
 margin-bottom: -20px;
+font-family: Wizard World;
 }
 
 .imagem__direita {
@@ -58,6 +68,7 @@ position: relative;
 right: -250px;
 top: 50px;
 font-size: 25px;
+font-family: Wizard World;
 }
 
 .texto__direita {
@@ -66,8 +77,9 @@ position: relative;
 padding-left: 80px;
 padding-top: 80px;
 font-size: 20px;
-max-width: 1100px;
+max-width: 1000px;
 text-align: justify;
+font-family: DM Sans;
 }
 
 .imagem__esquerda {
@@ -84,6 +96,7 @@ position: relative;
 right: -300px;
 top: 50px;
 font-size: 25px;
+font-family: Wizard World;
 }
 
 .texto__esquerda {
@@ -95,29 +108,7 @@ padding-top: 80px;
 font-size: 20px;
 max-width: 1000px;
 text-align: justify;
-}
-
-.hr {
-justify-content: center;
-margin-top: 20px;
-background: white;
-height: 2px;
-opacity: unset;
-margin: 1px -10%;
-}
-
-.navBarFooter__copyright {
-background: black;
-margin-top: 10px;
-margin-bottom: 20px;
-}
-.navBarFooter__copyright p {
-color: white;
-font-size: 14px;
-font-weight: 300;
-line-height: 19px;
-text-align: center;
-padding-top: 10px;
+font-family: DM Sans;
 }
 
 .filmeDireita {
@@ -137,4 +128,102 @@ position: relative;
 background: rgba(217, 217, 217, 0.08);
 margin-left: 210px;
 margin-top: 40px;
+}
+
+.navBarFooter {
+top: 30px;
+position: relative;
+}
+
+.navBarFooter__logo {
+width: 149px;
+height: 49px;
+left: 96px;
+position: absolute;
+}
+
+.navBarFooter__nav {
+font-size: 16px;
+font-family: DM Sans;
+font-weight: 500;
+line-height: 22.5px;
+padding-top: 30px;
+padding-bottom: 8px;
+justify-content: center;
+align-items: flex-start;
+gap: 40px;
+list-style: none;
+display: flex;
+}
+
+.navBarFooter__nav a {
+text-decoration: none;
+color: white;
+}
+
+.navBarFooter__nav a:hover {
+color: #917a50;
+}
+
+.hr {
+justify-content: center;
+margin-top: 20px;
+background: white;
+height: 2px;
+opacity: unset;
+margin: 1px 10%;
+}
+
+.navBarFooter__copyright {
+background: black;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+.navBarFooter__copyright p {
+color: white;
+font-size: 14px;
+font-weight: 300;
+line-height: 19px;
+text-align: center;
+font-family: DM Sans;
+padding-top: 10px;
+}
+
+
+.social-container{
+display: flex;
+justify-content: flex-end;
+}
+
+.social-icons {
+display: flex;
+list-style: none;
+gap: 5px;
+justify-content: flex-end;
+padding-right: 5%;
+}
+
+*, ::after, ::before {
+box-sizing: content-box !important;
+}
+
+.fa {
+padding: 10px;
+font-size: 20px;
+width: 20px;
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+}
+
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-github,
+.fa-instagram {
+background: #1E293B;
+color: white;
 }
