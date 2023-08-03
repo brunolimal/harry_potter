@@ -19,6 +19,10 @@ gap: 30px;
 padding: 0px !important;
 }
 
+.navbar-nav li:nth-child(3) {
+    border-bottom: 2px white solid;
+  }
+
 .nav-item .nav-link:hover {
 color: #917a50;
 }

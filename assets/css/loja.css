@@ -7,20 +7,33 @@
     background-color: #000000 ;
     
 }
-.navbar-brand{
-    padding: 10px;
-    margin: 0px;
-}
-.nav-item{
-    padding: 20px;
-    
-   
-}
-.nav-item:hover {
-    text-decoration: underline white;
+.navbar-brand {
+    height: 70px;
+    padding: 20px 50px;
   }
   
-
+  .navbar-nav {
+    gap: 30px;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0px !important;
+  }
+  
+  .navbar-nav li:nth-child(7) {
+    border-bottom: 2px white solid;
+  }
+  
+  .nav-item .nav-link:hover {
+    color: #917a50;
+  }
+  
+  .nav-item a {
+    color: white;
+    font-family: DM Sans;
+    font-size: 18px;
+    justify-content: center;
+  }
 .menu{
     display: flex;
     justify-content:space-evenly;
