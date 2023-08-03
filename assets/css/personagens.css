@@ -17,8 +17,8 @@
     }
 
 .navbar-brand {
-    height: 70px;
-    padding: 20px 50px;
+  height: 70px;
+  padding: 20px 50px;
   }
     
 .navbar-nav {
@@ -39,7 +39,7 @@
     
   .nav-item a {
     color: white;
-    font-family:   'Wizard World';
+    font-family:   DM Sans;
     font-size: 18px;
     justify-content: center;
   }
@@ -128,7 +128,7 @@
   position: relative;
   display: block;
   font-size: 18px;
-  font-family: 'Wizard World';
+  font-family: DM Sans;
   font-weight: 500;
   line-height: 22.5px;
   padding-top: 36px;
@@ -167,7 +167,7 @@
   font-weight: 300;
   line-height: 19px;
   text-align: center;
-  font-family: 'Wizard World';
+  font-family: DM Sans;
   padding-top: 10px;
 }
 
