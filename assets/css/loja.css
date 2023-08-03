@@ -1,219 +1,214 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
-.background{
-    background-color: #000000 ;
-    
+.background {
+  background-color: #000000;
 }
+/* Sessão do MENU */
+
 .navbar-brand {
-    height: 70px;
-    padding: 20px 50px;
-  }
-  
-  .navbar-nav {
-    gap: 30px;
-  }
-  
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0px !important;
-  }
-  
-  .navbar-nav li:nth-child(7) {
-    border-bottom: 2px white solid;
-  }
-  
-  .nav-item .nav-link:hover {
-    color: #917a50;
-  }
-  
-  .nav-item a {
-    color: white;
-    font-family: DM Sans;
-    font-size: 18px;
-    justify-content: center;
-  }
-.menu{
-    display: flex;
-    justify-content:space-evenly;
-    font-size: 18px;
-    padding: 5px;
-    list-style: none;
-    margin: 5px;
-    color: white;
+  height: 80px;
+  padding: 20px 50px;
 }
 
-.imagem-principal{
-    padding: 0px;
-    display: flex;
-    justify-content: center;
+.navbar-nav {
+  gap: 30px;
 }
 
-
-.colecao{
-    display: flex;
-    color: white;
-    background-image: url("/Imagens-HarryPotter/vector1.png");
-    width: 1090px;
-    height: 50px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    font-family: Wizard World;
-    font-size: 28px;
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0px !important;
 }
 
-.lancamentos .lancamentos__title{
-    color:#AC9206;
-    padding: 10px;
-    margin: 10px 0px 0px 18px;
-    border-bottom: solid 2px #AC9206;
-    margin-bottom: 20px;
-    width: 280px;
-    font-family: Wizard World;
-    font-size: 20px;
-}
-.lancamentos .lancamentos__produtos{
-    color:#AC9206;
-    display:  flex;
-    justify-content: space-around;
-    
+.navbar-nav li:nth-child(7) {
+  border-bottom: 2px white solid;
 }
 
-.camisetas .camisetas__title{
-    color:#AC9206;
-    padding: 10px;
-    margin: 10px 0px 0px 18px;
-    border-bottom: solid 2px #AC9206;
-    margin-bottom: 20px;
-    width: 280px;
-    font-family: Wizard World;
-    font-size: 20px;
+.nav-item .nav-link:hover {
+  color: #917a50;
 }
 
-.camisetas .camisetas__produtos{
-    color:#AC9206;
-    display:  flex;
-    justify-content: space-around;
+.nav-item a {
+  color: white;
+  font-family: DM Sans;
+  font-size: 18px;
+  justify-content: center;
 }
 
-.canecas .canecas__title{
-    color:#AC9206;
-    padding: 10px;
-    margin: 10px 0px 0px 18px;
-    border-bottom: solid 2px #AC9206;
-    margin-bottom: 20px;
-    width: 280px;
-    font-family: Wizard World;
-    font-size: 20px;
-}
-.canecas  .canecas__produtos{
-    color:#AC9206;
-    display:  flex;
-    justify-content: space-around;
+.menu {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  padding: 5px;
+  list-style: none;
+  margin: 5px;
+  color: white;
+  font-family: DM Sans;
 }
 
-.acessorios .acessorios__title{
-    color:#AC9206;
-    padding: 10px;
-    margin: 10px 0px 0px 18px;
-    border-bottom: solid 2px #AC9206;
-    margin-bottom: 20px;
-    width: 280px;
-    font-family: Wizard World;
-    font-size: 20px;
-}
-.acessorios .acessorios__produtos{
-    color:#AC9206;
-    display:  flex;
-    justify-content: space-around;
+/* Fim da Sessão do MENU */
+.imagem-principal {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
 }
 
-
-.variedades .variedades__title{
-    color:#AC9206;
-    padding: 10px;
-    margin: 10px 0px 0px 18px;
-    border-bottom: solid 2px #AC9206;
-    margin-bottom: 20px;
-    width: 280px;
-    font-family: Wizard World;
-    font-size: 20px;
-}
-.variedades .variedades__produtos{
-    color:#AC9206;
-    display:  flex;
-    justify-content: space-around;
+.colecao {
+  display: flex;
+  color: white;
+  width: 1090px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  font-family: Wizard World;
+  font-size: 28px;
 }
 
-
-.comprar{
-    color: #AC9206;
-    background-color: #1E293B;
-    width: 120px;
-    height: 35px;
-    text-align: center;
-    border-radius: 5px;
-   
-   
-    
-    
+.lancamentos .lancamentos__title {
+  color: #ac9206;
+  padding: 10px;
+  margin: 10px 0px 0px 18px;
+  border-bottom: solid 2px #ac9206;
+  margin-bottom: 20px;
+  width: 280px;
+  font-family: Wizard World;
+  font-size: 20px;
 }
-button{
-    list-style: none;
-    margin-left: 175px !important;
-    
+.lancamentos .lancamentos__produtos {
+  color: #ac9206;
+  display: flex;
+  justify-content: space-around;
 }
 
-.preco{
-    color: white;
-}
-.caixa-produto{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 310px;
-    height: 590px;
-    border: 2px solid #AC9206;
-    margin: 20px;
-    text-align: center;
-    padding-top: 4px;
-    justify-content: space-around;
-    font-family: DM Sans;
+.camisetas .camisetas__title {
+  color: #ac9206;
+  padding: 10px;
+  margin: 10px 0px 0px 18px;
+  border-bottom: solid 2px #ac9206;
+  margin-bottom: 20px;
+  width: 280px;
+  font-family: Wizard World;
+  font-size: 20px;
 }
 
-.menu-inferior{
-    display: flex;
-    justify-content: space-around;
-    font-size: 25px;
-    padding: 5px;
-    align-items: center;
-    list-style: none;
-    margin: 5px;
-    color: white;
+.camisetas .camisetas__produtos {
+  color: #ac9206;
+  display: flex;
+  justify-content: space-around;
+}
+
+.canecas .canecas__title {
+  color: #ac9206;
+  padding: 10px;
+  margin: 10px 0px 0px 18px;
+  border-bottom: solid 2px #ac9206;
+  margin-bottom: 20px;
+  width: 280px;
+  font-family: Wizard World;
+  font-size: 20px;
+}
+.canecas .canecas__produtos {
+  color: #ac9206;
+  display: flex;
+  justify-content: space-around;
+}
+
+.acessorios .acessorios__title {
+  color: #ac9206;
+  padding: 10px;
+  margin: 10px 0px 0px 18px;
+  border-bottom: solid 2px #ac9206;
+  margin-bottom: 20px;
+  width: 280px;
+  font-family: Wizard World;
+  font-size: 20px;
+}
+.acessorios .acessorios__produtos {
+  color: #ac9206;
+  display: flex;
+  justify-content: space-around;
+}
+
+.variedades .variedades__title {
+  color: #ac9206;
+  padding: 10px;
+  margin: 10px 0px 0px 18px;
+  border-bottom: solid 2px #ac9206;
+  margin-bottom: 20px;
+  width: 280px;
+  font-family: Wizard World;
+  font-size: 20px;
+}
+.variedades .variedades__produtos {
+  color: #ac9206;
+  display: flex;
+  justify-content: space-around;
+}
+
+.comprar {
+  color: #ac9206;
+  background-color: #1e293b;
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+}
+button {
+  list-style: none;
+  margin-left: 175px !important;
+}
+
+.preco {
+  color: white;
+}
+.caixa-produto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 310px;
+  height: 590px;
+  border: 2px solid #ac9206;
+  margin: 20px;
+  text-align: center;
+  padding-top: 4px;
+  justify-content: space-around;
+  font-family: DM Sans;
+}
+
+.menu-inferior {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  padding: 5px;
+  align-items: center;
+  list-style: none;
+  margin: 5px;
+  color: white;
 }
 
 hr {
-    justify-content: center;
-    width: 80%;
-    margin-top: 20px;
-    background: white;
-    margin: auto;
-  }
+  justify-content: center;
+  width: 80%;
+  margin-top: 20px;
+  background: white;
+  margin: auto;
+}
 
 .navBarFooter__copyright {
-    background: black;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-  
-  .navBarFooter__copyright p {
-    color: white;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 19px;
-    text-align: center;
-    font-family: DM Sans;
-  }
+  background: black;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.navBarFooter__copyright p {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: center;
+  font-family: DM Sans;
+}
