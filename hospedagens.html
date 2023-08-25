@@ -1,259 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/styleHospedagens.css" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospedagens</title>
+  <link rel="stylesheet" href="assets/css/styleHospedagens.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 
-    <link href="https://fonts.cdnfonts.com/css/wizard-world" rel="stylesheet" />
-    <title>Hospedagens</title>
-  </head>
+  <link href="https://fonts.cdnfonts.com/css/wizard-world" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://www.nicepng.com/png/detail/439-4398678_harry-potter-logo-png-download-harry-potter-logo.png">
+  <link href="https://fonts.cdnfonts.com/css/wizard-world" rel="stylesheet">
+</head>
+
+<body class="body">
 
   <header>
     <!-- Menu Header com Bootstrap -->
     <div class="menu">
       <nav class="navbar navbar-expand-lg navbar navbar-dark">
-        <img
-          class="navbar-brand"
-          src="assets/img/logo_harry.png"
-          alt="Logo Harry Potter"
-        />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <img class="navbar-brand" src="assets/img/logo_harry.png" alt="Logo Harry Potter">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link custom-nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="personagens.html">Personagens</a>
+              <a class="nav-link custom-nav-link" href="personagens.html">Personagens</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="filmes.html">Filmes</a>
+              <a class="nav-link custom-nav-link" href="filmes.html">Filmes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="livros.html">Livros</a>
+              <a class="nav-link custom-nav-link" href="livros.html">Livros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="restaurante.html">Restaurantes</a>
+              <a class="nav-link custom-nav-link" href="restaurante.html">Restaurantes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="hospedagens.html">Hospedagens</a>
+              <a class="nav-link custom-nav-link" href="hospedagens.html">Hospedagens</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="loja.html">Loja</a>
+              <a class="nav-link custom-nav-link" href="loja.html">Loja</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Comunidade.html">Comunidade</a>
+              <a class="nav-link custom-nav-link" href="Comunidade.html">Comunidade</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
-  <body class="body">
-    <!-- Imagem da philomena -->
-    <img class="bannerPrincipal"
-      src="https://a0.muscache.com/im/pictures/507791cc-6f21-4395-a812-f8f0f88a8723.jpg?im_w=1200"
-      alt="Imagens casa Philomena"
-    />
-    <!-- imagem hogwarts -->
-    <img
-      src="https://i.pinimg.com/564x/7d/a5/27/7da52786b875c93888626e67af7882a6.jpg"
-      alt="logo Hogwarts"
-    />
-    <br />
-    <h1>
-      IREMOS ABAIXO LISTAR AS ACOMODAÇÕES TEMÁTICAS DE HARRY POTTER NO BRASIL
-    </h1>
-    <br />
 
-    <div>
-      <img
-        src="data:image/jpeg;base64,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"
-        alt="logo Philomena"
-      />
-      <h4>
-        A Casa da Bruxa Philomena é uma experiência mágica de imersão no mundo
-        bruxo. Localizada no bairro Cidade Baixa, em POA, a casa possui 1 cama
-        de casal, 1 solteiro e 1 beliche para receber até 5 pessoas. Veja mais
-        fotos e informações de como fazer sua reserva, clicando no link abaixo:
+  <div class="imagem__principal">
+    <img src="./assets/img/castelo.webp" alt="Castelo de Hogwarts">
+  </div>
 
-        <!-- link do airBnb abaixo da imagem -->
+  <div class="pagina__titulo">
+    <h1>ACOMODAÇÕES TEMÁTICAS<br>DE HARRY POTTER PELO MUNDO</h1>
+  </div>
 
-        <ul class="philomena link">
-          <div>
-            <li>
-              <a
-                href="https://www.airbnb.com.br/s/homes?c=.pi0.pk16891040588_136762595218&sem_automaid=true&gclid=CjwKCAjw-7OlBhB8EiwAnoOEkyWwM3lVC7DU5d4N_SfWGTeoZf0yOWauNnydCwBkOyopozBDRAH70RoC5JwQAvD_BwE&dynamic_product_ids%5B%5D=31278184&omni_page_id=27964"
-                >LINK</a
-              >
-            </li>
-          </div>
-        </ul>
-      </h4>
-    </div>
 
-    <br />
-    <div>
-      <h4>
-        O Apartamento da Bruxa oferece muito mais do que uma hospedagem, criamos
-        um ambiente totalmente imersivo que conta com decoração exclusiva
-        inspirada no mundo Bruxo, que fará você se sentir parte deste mundo
-        mágico. Saiba mais clicando no link do Instagram abaixo:
+  <div class="boxHospedagens">
+    <div class="hopspedagemBloco">
+      <img class="hopspedagemBloco__img" src="./assets/img/casa da bruxa Philomena.jpeg">
+      <div class="hopspedagemBloco__titulo">
+        <h3>Casa da Bruxa Philomena </h3>
+      </div>
 
-        <!-- link do instagram -->
-        <br />
-
-        <ul class="link instagram casa da bruxa">
-          <li>
-            <a href="https://www.instagram.com/apartamentodabruxa/"
-              >Instagram</a
-            >
-          </li>
-        </ul>
-
-        <br />
-        E caso queira ir direto para fazer sua reserva:
-
-        <!-- link do airBnb -->
-        <br />
-
-        <ul>
-          <li>
-            <a
-              href="https://www.airbnb.com.br/rooms/797048973815109347?source_impression_id=p3_1689095634_ok3Xfyzaojehfxp7"
-              >Reserva</a
-            >
-          </li>
-        </ul>
-        <br />
-      </h4>
-      <br />
-      <img
-        src="https://a0.muscache.com/im/pictures/miso/Hosting-797048973815109347/original/97e69f92-de3e-49ad-b403-53cde6370191.jpeg?im_w=720"
-        alt="Logo Apartamento da Bruxa"
-      />
-    </div>
-
-    <br />
-    <h1>ABAIXO OUTRAS OPÇÕES ESPALHADAS PELO MUNDO</h1>
-    <br />
-
-    <!-- imagem de The Common Room -->
-    <div>
-      <img
-        src="https://a0.muscache.com/im/pictures/3027c147-14a9-4bf6-8589-58c080ee765b.jpg?aki_policy=xx_large"
-        alt="logo common"
-      />
-      <h2>The Common Room⚡️ 🇨🇦</h2>
-
-      <h4>
-        Esta acomodação foi completamente transformado na sala comum Gryfinndor
-        em Hogwarts. Independentemente de você ser um fã ou não, garantimos que
-        este será um dos lugares mais exclusivos para você ficar. Essa
-        acomodação fica em Victoria, British Columbia, Canadá E pode ser
-        reservada no link abaixo:
-      </h4>
-
-      <!-- link do airbnb -->
-      <ul>
-        <li>
+      <div class="hopspedagemBloco__descritivo">
+        <p>A Casa da Bruxa Philomena é uma experiência mágica de imersão no mundo
+          bruxo. Localizada no bairro Cidade Baixa, em POA, a casa pode receber até 5 pessoas.<br> Veja mais
+          fotos e informações de como fazer sua reserva, clicando
           <a
-            href="https://www.airbnb.com/rooms/43916034?source_impression_id=p3_1689095933_d9Kg4eFEwaSyGUMr"
-            >Reserva</a
-          >
-        </li>
-      </ul>
+            href="https://www.airbnb.com.br/s/homes?c=.pi0.pk16891040588_136762595218&sem_automaid=true&gclid=CjwKCAjw-7OlBhB8EiwAnoOEkyWwM3lVC7DU5d4N_SfWGTeoZf0yOWauNnydCwBkOyopozBDRAH70RoC5JwQAvD_BwE&dynamic_product_ids%5B%5D=31278184&omni_page_id=27964">Aqui!</a>
+        </p>
+      </div>
+      <!--  -->
     </div>
 
-    <div>
-      <h2>Alchemy - Treehouses of Serenity 🇺🇸</h2>
+    <div class="hopspedagemBloco">
+      <img class="hopspedagemBloco__img" src="./assets/img/apartamento da bruxa.webp" alt="Logo Apartamento da Bruxa">
+      <div class="hopspedagemBloco__titulo">
+        <h3>Apartamento da Bruxa </h3>
+      </div>
 
-      <img
-        src="https://www.thesun.co.uk/wp-content/uploads/2022/03/COMP-CFP-TREEHOUSEv3.jpg?strip=all&quality=100&w=1080&h=1000&crop=1"
-        alt="acomodação Treehouses of Serenity"
-      />
-      <h4>
-        Essa hospedagem fica em Asheville, Carolina do Norte nos EUA, e é
-        baseada na Copa do Mundo de Quadribol, ou Quidditch WorldCup. Que pode
-        ser visto em "Harry Potter e o Cálice de Fogo". A casa de férias, que se
-        chama Alchemy, é enfeitada com luzes em forma de pomo, capas, cortinas
-        temáticas e até um chapéu seletor. Quem quiser hospedar-se nessa
-        maravilha, basta clicar abaixo:
-
-        <!-- link do airbnb -->
-
-        <ul>
-          <li>
-            <a href="https://www.airbnb.com/rooms/552854032626379307"
-              >Link de reserva</a
-            >
-          </li>
-        </ul>
-      </h4>
+      <div class="hopspedagemBloco__descritivo">
+        <p>O Apartamento da Bruxa oferece muito mais do que uma hospedagem, criamos
+          um ambiente totalmente imersivo que conta com decoração exclusiva
+          inspirada no mundo Bruxo, que fará você se sentir parte deste mundo
+          mágico. Saiba mais clicando no link do
+          <a href="https://www.instagram.com/apartamentodabruxa/">Instagram</a>
+          <br>
+          E caso queira fazer uma reserva:
+          <a
+            href="https://www.airbnb.com.br/rooms/797048973815109347?source_impression_id=p3_1689095634_ok3Xfyzaojehfxp7">Clique
+            aqui!</a>
+        </p>
+      </div>
     </div>
-    <br />
 
-    <!-- imagem do HP no footer -->
-    <footer class="Footer">
-      <img
-        class="footer__logo"
-        src="./Imagens-HarryPotter/logoHP (2).png"
-        alt="Logo Harry Potter"
-      />
-      <div class="footer__nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="personagens.html">Personagens</a></li>
-        <li><a href="filmes.html">Filmes</a></li>
-        <li><a href="livros.html">Livros</a></li>
-        <li><a href="restaurante.html">Restaurantes</a></li>
-        <li><a href="hospedagens.html">Hospedagens</a></li>
-        <li><a href="loja.html">Loja</a></li>
-        <li><a href="Comunidade.html">Comunidade</a></li>
+    <div class="hopspedagemBloco">
+      <img class="hopspedagemBloco__img" src="./assets/img/the common Room.webp" alt="The Common Room">
+      <div class="hopspedagemBloco__titulo">
+        <h3>The Common Room⚡️ </h3>
       </div>
-      <hr class="footer__linha" />
-      <div class="copyright">
-        <p>© Copyright 2023, All Rights Reserved - Harry Potter Team</p>
+      <div class="hopspedagemBloco__descritivo">
+        <p>Esta acomodação foi completamente transformado na sala comunal da Grifinória em Hogwarts.
+          Seja você fã ou não, garantimos que este será um dos lugares mais exclusivos onde você ficará hospedado.
+          Essa acomodação fica em Victoria, Colúmbia Britânica, Canadá e pode ser reservada no link abaixo:
+          <br>
+          E pode ser reservada no link do
+          <a href="https://www.airbnb.com/rooms/43916034?source_impression_id=p3_1689095933_d9Kg4eFEwaSyGUMr">Airbnb
+            aqui!</a>
+        </p>
       </div>
-    </footer>
+    </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <div class="hopspedagemBloco">
+      <img class="hopspedagemBloco__img" src="assets/img/Alchemy - Treehouses of Serenity .webp"
+        alt="acomodação Treehouses of Serenity">
+      <div class="hopspedagemBloco__titulo">
+        <h3>Alchemy - Treehouses of Serenity 🇺🇸</h3>
+      </div>
+      <div class="hopspedagemBloco__descritivo">
+        <p>Essa hospedagem fica em Asheville, Carolina do Norte nos EUA, e é
+          baseada na Copa do Mundo de Quadribol, ou Quidditch WorldCup. <br> Que pode
+          ser visto em "Harry Potter e o Cálice de Fogo". A casa de férias, que se
+          chama Alchemy, é enfeitada com luzes em forma de pomo, capas, cortinas
+          temáticas e até um chapéu seletor. Quem quiser hospedar-se nessa
+          maravilha, basta clicar abaixo:
+          <a href="https://www.airbnb.com/rooms/552854032626379307">Airbnb
+            aqui!</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Rodapé -->
+  <footer class="Footer">
+    <img class="footer__logo" src="assets/img/logo_harry.png" alt="Logo Harry Potter">
+    <div class="footer__nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="personagens.html">Personagens</a></li>
+      <li><a href="filmes.html">Filmes</a></li>
+      <li><a href="livros.html">Livros</a></li>
+      <li><a href="restaurante.html">Restaurantes</a></li>
+      <li><a href="hospedagens.html">Hospedagens</a></li>
+      <li><a href="loja.html">Loja</a></li>
+      <li><a href="Comunidade.html">Comunidade</a></li>
+    </div>
+    <hr class="footer__linha" />
+    <div class="copyright">
+      <p>© Copyright 2023, All Rights Reserved - Harry Potter Team</p>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

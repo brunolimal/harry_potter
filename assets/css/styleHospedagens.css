@@ -1,15 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
-
-.body {
-  background-color: black;
-  color: white;
-  font-family: DM Sans;
-}
-
 /* Sessão do MENU */
 
 .navbar-brand {
-  height: 80px;
+  height: 70px;
   padding: 20px 50px;
 }
 
@@ -17,8 +9,8 @@
   gap: 30px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0px !important;
+.navbar-expand-lg .navbar-nav .nav-link.custom-nav-link {
+  padding: 0px;
 }
 
 .navbar-nav li:nth-child(6) {
@@ -37,7 +29,6 @@
 }
 
 .menu {
-  background-color: black;
   display: flex;
   justify-content: space-evenly;
   font-size: 18px;
@@ -45,18 +36,90 @@
   list-style: none;
   margin: 5px;
   color: white;
-  font-family: DM Sans;
 }
 
 /* Fim da Sessão do MENU */
 
-/*Banner Principal*/
+/* Conteudo */
 
-.bannerPrincipal{
+.body {
+  background-color: black;
+  color: white;
+  font-family: DM Sans;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem__principal img {
   width: 100%;
 }
 
-/* Sessão do Footer */
+.pagina__titulo h1 {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+
+.boxHospedagens {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.hopspedagemBloco {
+  width: 45%;
+  position: relative;
+  background: rgba(217, 217, 217, 0.08);
+  margin-left: 50px;
+  gap: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: center;
+}
+
+
+.hopspedagemBloco__titulo {
+  color: white;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Wizard World';
+  margin-top: 20px;
+}
+
+.hopspedagemBloco__descritivo {
+  color: white;
+  font-size: 20px;
+  font-family: DM Sans;
+  font-weight: 400;
+  line-height: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  text-align: justify;
+  margin: 0 30px 0 30px;
+}
+
+.hopspedagemBloco__img {
+  height: 400px;
+  position: relative;
+}
+
+.hopspedagemBloco__descritivo a {
+  color: #917a50;
+  text-decoration: none;
+}
+
+/* Fim Conteudo */
+
+/*-- Rodapé --*/
 
 .footer {
   width: auto;
