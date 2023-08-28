@@ -159,6 +159,10 @@
   color: #917a50;
 }
 
+.footer__nav li:nth-child(6) {
+  border-bottom: 2px white solid;
+}
+
 .copyright {
   background: black;
   margin-top: 30px;

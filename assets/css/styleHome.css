@@ -660,6 +660,10 @@
   color: #917a50;
 }
 
+.navBarFooter__nav li:first-child {
+  border-bottom: 2px white solid;
+}
+
 .hr {
   justify-content: center;
   margin-top: 20px;

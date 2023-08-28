@@ -68,6 +68,10 @@ h5 a {
   color: #917a50;
 }
 
+.footer__nav li:nth-child(5) {
+  border-bottom: 2px white solid;
+}
+
 
 .principal {
   background-color: black;

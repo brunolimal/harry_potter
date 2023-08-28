@@ -192,6 +192,10 @@ margin-top: 50px;
     .navBarFooter__nav a:hover {
     color: #917a50;
     }
+
+    .navBarFooter__nav li:nth-child(4) {
+      border-bottom: 2px white solid;
+    }
     
     .hr {
     justify-content: center;
