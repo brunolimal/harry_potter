@@ -7,9 +7,8 @@
   background-color: #000000;
 }
 /* Sessão do MENU */
-
 .navbar-brand {
-  height: 80px;
+  height: 70px;
   padding: 20px 50px;
 }
 
@@ -17,11 +16,11 @@
   gap: 30px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0px !important;
+.navbar-expand-lg .navbar-nav .nav-link.custom-nav-link {
+  padding: 0px;
 }
 
-.navbar-nav li:nth-child(7) {
+.navbar-nav li:nth-child(7){
   border-bottom: 2px white solid;
 }
 
@@ -37,7 +36,6 @@
 }
 
 .menu {
-  background-color: black;
   display: flex;
   justify-content: space-evenly;
   font-size: 18px;
@@ -45,7 +43,6 @@
   list-style: none;
   margin: 5px;
   color: white;
-  font-family: DM Sans;
 }
 
 /* Fim da Sessão do MENU */
@@ -58,14 +55,13 @@
 .colecao {
   display: flex;
   color: white;
-  width: 1090px;
-  height: 50px;
   align-items: center;
   text-align: center;
   justify-content: center;
   margin: auto;
   font-family: Wizard World;
-  font-size: 28px;
+  font-size: 26px;
+  
 }
 
 .lancamentos .lancamentos__title {
@@ -82,6 +78,7 @@
   color: #ac9206;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .camisetas .camisetas__title {
@@ -99,6 +96,7 @@
   color: #ac9206;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .canecas .canecas__title {
@@ -115,6 +113,7 @@
   color: #ac9206;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .acessorios .acessorios__title {
@@ -131,6 +130,7 @@
   color: #ac9206;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .variedades .variedades__title {
@@ -147,6 +147,7 @@
   color: #ac9206;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .comprar {
@@ -179,23 +180,12 @@ button {
   font-family: DM Sans;
 }
 
-.menu-inferior {
-  display: flex;
-  justify-content: space-around;
-  font-size: 25px;
-  padding: 5px;
-  align-items: center;
-  list-style: none;
-  margin: 5px;
-  color: white;
-}
-
-hr {
-  justify-content: center;
-  width: 80%;
-  margin-top: 20px;
-  background: white;
-  margin: auto;
+.hr {
+  height: 2px;
+  justify-items: center;
+  background-color: white;
+  margin: 1px 5%;
+  opacity: unset;
 }
 
 .navBarFooter__copyright {
