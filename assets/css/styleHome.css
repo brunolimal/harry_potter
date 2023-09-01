@@ -44,6 +44,10 @@
   color: white;
 }
 
+/* Fim do MENU */
+
+/* banner Principal */
+
 .containerPrincipal {
   display: flex;
   flex-wrap: wrap;
@@ -301,11 +305,13 @@
   height: 275px;
 }
 
+/* 
 .boxCasas-imgbox {
   display: flex;
   width: 100%;
   justify-content: center;
 }
+*/
 
 .boxCasas__img {
   position: relative;
@@ -603,7 +609,7 @@
   left: 0px;
   top: 0px;
   position: relative;
-  grid-area: restaurantes;
+  /*grid-area: restaurantes;*/
 }
 
 .subCategorias__restaurantes--title {
