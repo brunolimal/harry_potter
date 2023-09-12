@@ -3,6 +3,10 @@
 .background {
   background-color: #000000;
 }
+.img-produto{
+  width: 298.08px;
+  height: 446px;
+}
 /* Sessão do MENU */
 .navbar-brand {
   height: 70px;
