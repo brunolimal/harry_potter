@@ -45,6 +45,9 @@ color: white;
 }
 
 .imagem__principal {
+width: 100%;
+max-width: 100vw;
+height: auto;
 position: relative;
 overflow: hidden;
 }
@@ -60,7 +63,15 @@ font-family: Wizard World;
 
 .imagem__direita {
 position: relative;
-margin-top: -400px;
+margin-top: -350px;
+transform: translateX(1150px);
+width: 230px;
+height: 310px;
+}
+
+.imagem__azcaban {
+position: relative;
+margin-top: -300px;
 transform: translateX(1150px);
 width: 230px;
 height: 310px;
