@@ -15,8 +15,8 @@
   gap: 30px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0px !important;
+.navbar-expand-lg .navbar-nav .nav-link.custom-nav-link {
+  padding: 0px;
 }
 
 .navbar-nav li:first-child {
@@ -43,6 +43,10 @@
   margin: 5px;
   color: white;
 }
+
+/* Fim do MENU */
+
+/* banner Principal */
 
 .containerPrincipal {
   display: flex;
@@ -301,11 +305,13 @@
   height: 275px;
 }
 
+/* 
 .boxCasas-imgbox {
   display: flex;
   width: 100%;
   justify-content: center;
 }
+*/
 
 .boxCasas__img {
   position: relative;
@@ -380,7 +386,6 @@
 
 .sonserina__title:hover {
   font-size: 45px;
-  left: 350px;
 }
 
 .sonserina__descritivo {
@@ -431,7 +436,6 @@
 
 .corvinal__title:hover {
   font-size: 45px;
-  left: 350px;
 }
 
 .corvinal__descritivo {
@@ -605,7 +609,7 @@
   left: 0px;
   top: 0px;
   position: relative;
-  grid-area: restaurantes;
+  /*grid-area: restaurantes;*/
 }
 
 .subCategorias__restaurantes--title {
@@ -660,6 +664,10 @@
 
 .navBarFooter__nav a:hover {
   color: #917a50;
+}
+
+.navBarFooter__nav li:first-child {
+  border-bottom: 2px white solid;
 }
 
 .hr {

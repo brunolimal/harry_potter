@@ -4,6 +4,7 @@ background-color: black;
 
 body {
 overflow-x: hidden;
+max-width: 100%;
 }
 
 .navbar-brand {
@@ -18,6 +19,10 @@ gap: 30px;
 .navbar-expand-lg .navbar-nav .nav-link {
 padding: 0px !important;
 }
+
+.navbar-nav li:nth-child(3) {
+    border-bottom: 2px white solid;
+  }
 
 .nav-item .nav-link:hover {
 color: #917a50;
@@ -41,6 +46,9 @@ color: white;
 }
 
 .imagem__principal {
+width: 100%;
+max-width: 100vw;
+height: auto;
 position: relative;
 overflow: hidden;
 }
@@ -163,6 +171,10 @@ color: white;
 
 .navBarFooter__nav a:hover {
 color: #917a50;
+}
+
+.navBarFooter__nav li:nth-child(3) {
+  border-bottom: 2px white solid;
 }
 
 .hr {

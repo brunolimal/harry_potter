@@ -12,7 +12,7 @@
 /* Sessão do MENU */
 
 .navbar-brand {
-  height: 70px;
+  height: 80px;
   padding: 20px 50px;
 }
 
@@ -66,6 +66,10 @@ h5 a {
 
 .footer__nav li a:hover {
   color: #917a50;
+}
+
+.footer__nav li:nth-child(5) {
+  border-bottom: 2px white solid;
 }
 
 

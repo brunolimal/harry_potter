@@ -1,109 +1,52 @@
-
-/*pagina */
-
-.content {
-    background-color: black;
-    padding: 84px;
-    font-family: 'Wizard World';
-  }
-
-
-.titulo__personagens {
-    font-size: 80px;
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: 10px;
-    color: white;
-    }
+/* Sessão do MENU */
 
 .navbar-brand {
-    height: 70px;
-    padding: 20px 50px;
-  }
-    
+  height: 90px;
+  width: 280px;
+  padding: 20px 50px;
+}
+
 .navbar-nav {
-    gap: 30px;
-  }
-    
+  gap: 30px;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0px !important;
-  }
-    
-  .navbar-nav li:nth-child(2) {
-    border-bottom: 2px white solid;
-  }
-    
+  padding: 0px !important;
+}
+
+.navbar-nav li:nth-child(2) {
+  border-bottom: 2px white solid;
+}
+
 .nav-item .nav-link:hover {
-    color: #917a50;
-  }
-    
-  .nav-item a {
-    color: white;
-    font-family:   'Wizard World';
-    font-size: 18px;
-    justify-content: center;
-  }
-    
-  .menu {
-    background-color: black;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 18px;
-    padding: 5px;
-    gap: 40px;
-    list-style: none;
-    color: white;
-    font-family: 'Wizard World';
-  }
+  color: #917a50;
+}
 
-.card-personagem {
-  padding: 20px;
-  margin: 50px;
-  text-align: center;
-  border: 100px;
-  background-color: rgb(82, 88, 95);
+.nav-item a {
   color: white;
+  font-family: DM Sans;
+  font-size: 18px;
+  justify-content: center;
 }
 
-.card-personagem .card__info {
+.menu {
+  background-color: black;
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  text-align: center;
-  align-items: center;
+  justify-content: space-evenly;
+  font-size: 18px;
+  padding: 5px;
+  list-style: none;
+  margin: 5px;
+  color: white;
+  font-family: DM Sans;
 }
 
+/* Fim da Sessão do MENU */
 
-.card-personagem .card__descrição {
-    font-size: 20px;
-    text-align: left;
-    margin-top: 40px;
-    align-items: center;
-
-  }
-
-  .card-personagem .card__image {
-    border-radius: 100%;
-    min-width: 321px;
-    width: 321px;
-    height: 337px;
-    object-fit: cover;
-  }
-
-  .card__image.card__image--right {
-    margin-right: -90px;
-  }
-
-  .card__image.card__image--left {
-    margin-left: -90px;
-  }
-
-  
-  .personagens {
-  align-content: center;
-  gap: 50px;
+.bannerPrincipal{
+  width: 100%;
+  height: 1000px;
 }
-
 
 /* sessao footer */
 
@@ -128,7 +71,7 @@
   position: relative;
   display: block;
   font-size: 18px;
-  font-family: 'Wizard World';
+  font-family: DM Sans;
   font-weight: 500;
   line-height: 22.5px;
   padding-top: 36px;
@@ -167,7 +110,7 @@
   font-weight: 300;
   line-height: 19px;
   text-align: center;
-  font-family: 'Wizard World';
+  font-family: DM Sans;
   padding-top: 10px;
 }
 
@@ -177,4 +120,51 @@
   background: white;
   opacity: unset;
   margin: 1px 5%;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: DM Sans;
+}
+
+.titulo__personagens {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: white;
+  font-family: 'Wizard World';
+}
+
+.busca {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+#characterList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: 'DM Sans';
+}
+
+.character-card {
+  border: 1px solid #917a50;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+img {
+  width: 237px;
+  height: 341px;
 }

@@ -9,7 +9,7 @@
 /* Sessão do MENU */
 
 .navbar-brand {
-  height: 70px;
+  height: 80px;
   padding: 20px 50px;
 }
 
@@ -147,6 +147,10 @@
 
 .footer__nav li a:hover {
   color: #917a50;
+}
+
+.footer__nav li:last-child {
+  border-bottom: 2px white solid;
 }
 
 .copyright {
